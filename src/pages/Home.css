@@ -1,14 +1,30 @@
 .Home{
-  background-color: aliceblue;
+  display: flexbox;
+  max-width: fit-content;
+  max-height: fit-content;
 }
 
 .background{
-  background-color: white;
+  background-color: aliceblue;
+  padding: 3em;
 }
-
+.background2 {
+  background-color: whitesmoke;
+  padding: 3em;
+}
 .section1{
-  padding-top: 1em; 
   text-align: center;
 }
 
+.section2intro{
+  text-align: center;
+}
 
+.section3intro{
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+}

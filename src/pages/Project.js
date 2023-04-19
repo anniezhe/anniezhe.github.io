@@ -2,7 +2,7 @@ import * as React from "react";
 
 const Project = () => {
   return (
-    <div>
+    <div className="project">
       <p>How are you?</p>
     </div>
   );

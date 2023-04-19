@@ -1,0 +1,5 @@
+.project{
+    display: flexbox;
+    max-width: fit-content;
+    max-height: fit-content;
+}
