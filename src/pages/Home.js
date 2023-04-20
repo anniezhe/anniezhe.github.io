@@ -62,7 +62,7 @@ const home = () => {
               <Card style={{ width: "16rem" }}>
                 <Card.Img variant="top" src="card3.png" />
                 <Card.Body>
-                  <Card.Title>Some Food For a Thought: Tech Layoffs and Recession's Arrival</Card.Title>
+                  <Card.Title>Some Food For Thought: Tech Layoffs and Recession's Arrival</Card.Title>
                   <Card.Text>
                     I wrote and published this article on Medium on March 2023 to offer a food for a thought. 
                   </Card.Text>

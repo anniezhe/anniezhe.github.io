@@ -15,7 +15,7 @@ function About() {
         <div className = "section1">
         <h1>About Me</h1>
         <p>
-          I like mathematical models, and I'm exploring artificial intelligence field. How I got here wasn't straightforward at all. Spoiler alert: I didn't always stick to STEM. There were many twists and turns throughout my entire career journey.
+          I like mathematical models, and I'm exploring Artificial Intelligence field. How I got here wasn't straightforward at all. Spoiler alert: I didn't always stick to STEM. There were many twists and turns throughout my entire career journey.
         </p>
         </div>
         
@@ -78,11 +78,11 @@ function About() {
           programming. After many college courses and internships later, I
           realized that software engineer wasn't right for me, so, out of
           curiosity, I changed my major to Applied Mathematics with Data Science
-          concentration. I took a course in machine learning and fell in love
+          concentration. I took a course in Machine Learning and fell in love
           with mathematical models. I really like playing with them. I find the
           idea of using them to achieve desirable results really fascinating.
           Eventually, I found the answer to my question. I want to pursue a
-          career in artificial intelligence and machine learning.
+          career in Artificial Intelligence/Machine Learning.
           </Typography>
             </TimelineContent>
           </TimelineItem>
