@@ -91,7 +91,7 @@ const home = () => {
                 <Card.Body>
                   <Card.Title>Computer Science Society Club's Website</Card.Title>
                   <Card.Text>
-                    I collaborated with two student executives to make a website for the Computer Science Society club.
+                    I collaborated with two student executives on January 2022 to make a website for the Computer Science Society club.
                   </Card.Text>
                   <Button variant="primary" href="https://jjaycss.tech/" target="_blank" rel="noopener noreferrer">Club Website</Button>
                 </Card.Body>

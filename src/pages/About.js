@@ -51,7 +51,7 @@ function About() {
           City College of New York as a high school researcher. I conducted an
           instrument comparison study using tropospheric ozone data with an
           undergraduate student, a graduate student, and a professor. I was
-          comparing two NASA's scientific instruments to each other: one was
+          comparing of two NASA's scientific instruments to each other using their ozone data: one was
           Aura satellite and the other was PANDORA spectrometer. The study
           demonstrated the possibility of having a STEM career where I can
           inject creativity into everything I do and make awesome things, so I
