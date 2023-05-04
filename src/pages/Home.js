@@ -163,8 +163,7 @@ const home = () => {
         <div className="section4intro">
           <h1>Resume</h1>
           <p>
-            I'm really happy to hear that you would like to see my resume. If
-            you would like to download my resume, click on the button that says,
+            I'm really happy to hear that you would like to see my resume. Click on the button that says,
             "Download My Resume".
           </p>
 
