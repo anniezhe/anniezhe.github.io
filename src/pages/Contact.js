@@ -23,6 +23,11 @@ function Contact() {
               <Button variant="primary" href="mailto:anniezhe0@gmail.com">
                 Email Me
               </Button>
+              &nbsp;
+              &nbsp;
+              <Button variant="primary" href="https://www.linkedin.com/in/anniezhe0">
+                Find Me on LinkedIn
+              </Button>
             </div>
           </div>
         </div>

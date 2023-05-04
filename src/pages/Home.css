@@ -24,6 +24,11 @@
   text-align: center;
 }
 
+.section4intro{
+  text-align: center;
+  padding-bottom: 3%;
+}
+
 .container{
   display: flex;
   justify-content: center;
