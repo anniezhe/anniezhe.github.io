@@ -6,8 +6,9 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import MenuItem from "@mui/material/MenuItem";
-import Menu from '@mui/material/Menu';
+import Menu from "@mui/material/Menu";
 import Media from "react-media";
+import Button from "react-bootstrap/Button";
 
 function App() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -45,6 +46,16 @@ function App() {
                     <NavLink className="nav-link" to="/contact">
                       Contact
                     </NavLink>
+                  </li>
+                  <li className="nav-item">
+                    <Button
+                      variant="primary"
+                      href="Annie_He_resume.pdf"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Get My Resume
+                    </Button>
                   </li>
                 </ul>
               </div>
@@ -87,9 +98,25 @@ function App() {
                     horizontal: "left",
                   }}
                 >
-                  <MenuItem onClick={handleClose}><NavLink to="/">Home</NavLink></MenuItem>
-                  <MenuItem onClick={handleClose}><NavLink to="/about">About</NavLink></MenuItem>
-                  <MenuItem onClick={handleClose}><NavLink to="/contact">Contact</NavLink></MenuItem>
+                  <MenuItem onClick={handleClose}>
+                    <NavLink to="/">Home</NavLink>
+                  </MenuItem>
+                  <MenuItem onClick={handleClose}>
+                    <NavLink to="/about">About</NavLink>
+                  </MenuItem>
+                  <MenuItem onClick={handleClose}>
+                    <NavLink to="/contact">Contact</NavLink>
+                  </MenuItem>
+                  <MenuItem onClick={handleClose}>
+                    <Button
+                      variant="primary"
+                      href="Annie_He_resume.pdf"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Get My Resume
+                    </Button>
+                  </MenuItem>
                 </Menu>
               </Container>
             </ul>

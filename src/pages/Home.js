@@ -169,7 +169,7 @@ const home = () => {
 
           <Button
             variant="primary"
-            href="Annie_He_resume.docx"
+            href="Annie_He_resume.pdf"
             target="_blank"
             rel="noreferrer"
           >
