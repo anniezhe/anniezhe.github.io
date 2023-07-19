@@ -1,14 +1,23 @@
-.about{
-    display: flexbox;
-    max-width: fit-content;
-    max-height: fit-content;
-  }
+.about {
+  display: flexbox;
+  max-width: fit-content;
+  max-height: fit-content;
+}
 
-  .background{
-    background-color: aliceblue;
-  }
-  
-  .section1{
-    text-align: center;
-    padding-bottom: 3%;
-  }
+.background {
+  background-color: aliceblue;
+}
+
+.section1 {
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.background2 {
+  background-color: gray;
+}
+
+.section2{
+  text-align: center;
+  padding-bottom: 3%;
+}

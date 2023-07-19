@@ -5,17 +5,24 @@ import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import {
+  MDBFooter,
+  MDBContainer,
+  MDBRow,
+  MDBCol,
+  MDBIcon,
+} from "mdb-react-ui-kit";
 
-const home = () => {
+export default function Home() {
   return (
     <div className="Home">
       <div className="section1 background">
         <h1>Annie He</h1>
         <p>
-          I'm a senior undergraduate student attending CUNY John Jay. I'm
-          majoring in Applied Mathematics with Data Science concentration and
-          minoring in Computer Science. I'm also an aspiring data scientist, a
-          writer, and a web developer.
+          I'm a data analytics apprentice at COOP Careers. I recently graduated
+          with a bachelor's degree in Applied Mathematics with a concentration
+          in Data Science. During my time as an undergraduate student, I minored
+          in Computer Science. I aspire to become a data scientist.
         </p>
       </div>
       <div className="section2 background2">
@@ -159,26 +166,103 @@ const home = () => {
           </Row>
         </Container>
       </div>
-      <div className="section4 background2">
-        <div className="section4intro">
-          <h1>Resume</h1>
-          <p>
-            I'm really happy to hear that you would like to see my resume. To see my resume, click on the button that says,
-            "Download My Resume".
-          </p>
+      <div className="section4">
+      <MDBFooter
+        bgColor="light"
+        className="text-center text-lg-start text-black"
+      >
+        <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+          <div className="me-5 d-none d-lg-block">
+            <span>Connect with me:</span>
+          </div>
 
-          <Button
-            variant="primary"
-            href="Annie_He_resume.pdf"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Download My Resume
-          </Button>
+          <div>
+            <a href="https://www.linkedin.com/in/anniezhe0" className="me-4 text-reset">
+              <MDBIcon color="secondary" fab icon="linkedin" />
+            </a>
+            <a href="https://www.github.com/anniezhe" className="me-4 text-reset">
+              <MDBIcon color="secondary" fab icon="github" />
+            </a>
+          </div>
+        </section>
+
+        <section>
+          <MDBContainer className="text-center text-md-start mt-5">
+            <MDBRow className="mt-3">
+              <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
+                <h6>
+                  <img src="mylogo.png" alt="My logo" width="60px"/>
+                </h6>
+                <p>
+                The codebase for my website is here <a href="https://github.com/anniezhe/porfolio">GitHub</a>. My domain is obtained from Google Domains. Made in NYC!
+                </p>
+              </MDBCol>
+
+              <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
+                <h6 className="text-uppercase fw-bold mb-4">Web Development</h6>
+                <p>
+                  <a href="https://www.simplilearn.com/tutorials/html-tutorial/html-vs-css" className="text-reset">
+                    HTML/CSS
+                  </a>
+                </p>
+                <p>
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" className="text-reset">
+                    JavaScript
+                  </a>
+                </p>
+                <p>
+                  <a href="https://react.dev/" className="text-reset">
+                    React
+                  </a>
+                </p>
+                <p>
+                  <a href="https://www.geeksforgeeks.org/how-to-use-bootstrap-with-react/" className="text-reset">
+                    Bootstrap with React
+                  </a>
+                </p>
+              </MDBCol>
+
+              <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
+                <h6 className="text-uppercase fw-bold mb-4">Data Science</h6>
+                <p>
+                  <a href="https://www.python.org/" className="text-reset">
+                    Python
+                  </a>
+                </p>
+                <p>
+                  <a href="https://jupyter.org/" className="text-reset">
+                    Jupyter Notebook
+                  </a>
+                </p>
+                <p>
+                  <a href="https://www.geeksforgeeks.org/libraries-in-python/" className="text-reset">
+                    Python Libraries
+                  </a>
+                </p>
+              </MDBCol>
+
+              <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
+                <h6 className="text-uppercase fw-bold mb-4">Contact Me</h6>
+                <p>
+                  <MDBIcon color="secondary" icon="envelope" className="me-3" />
+                  <a href="mailto:anniezhe0@gmail.com">anniezhe0@gmail.com</a>
+                </p>
+                <p>
+                <MDBIcon color='secondary' icon='phone' className='me-3' /> +1 (929) 577-6615
+              </p>
+              </MDBCol>
+            </MDBRow>
+          </MDBContainer>
+        </section>
+
+        <div
+          className="text-center text-white p-4"
+          style={{ backgroundColor: "black" }}
+        >
+          © 2022 Copyright Annie He
         </div>
+      </MDBFooter>
       </div>
     </div>
   );
-};
-
-export default home;
+}
