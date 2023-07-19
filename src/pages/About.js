@@ -144,10 +144,12 @@ export default function About() {
                 {"\n"}
                 CodePath and I were on a mission to share our love for
                 technology with college students across the United States and
-                encourage them to pursue their dream tech careers. I reduced
-                wait times for roughly 250 web development students to get their
-                questions answered by monitoring Zoom chat and Slack
-                aggressively and answering their questions promptly.
+                encourage them to pursue their dream tech careers. During class
+                time, I strengthened 21 students' ability to connect with the
+                web development course by communicating real life scenarios to
+                them consistently. I did this to ensure that they can achieve
+                good understanding of a topic and posess the motivation to
+                continue learning a topic outside of the Zoom classroom.
               </Text>
             </TimelineContent>
           </TimelineItem>
@@ -160,17 +162,17 @@ export default function About() {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
-            <Text>
-              <b>ICG Technology Summer Analyst @ Citigroup</b>
-              {"\n"}
-              I expedited the process for the sender's funding to reach
-              the recipient's bank account to 3 seconds by automating the
-              conversion from one format to another in the payment processing
-              system using Volante technology platform with 3 payment developers
-              based overseas. I also decreased wait times for newly hired
-              developers based in NYC to contact experienced developers based
-              overseas by 4 hours. I did this by creating a welcome guide
-              document on Confluence with 4 payment developers based overseas.
+              <Text>
+                <b>ICG Technology Summer Analyst @ Citigroup</b>
+                {"\n"}I expedited the process for the sender's funding to reach
+                the recipient's bank account to 3 seconds by automating the
+                conversion from one format to another in the payment processing
+                system using Volante technology platform with 3 payment
+                developers based overseas. I also decreased wait times for newly
+                hired developers based in NYC to contact experienced developers
+                based overseas by 4 hours. I did this by creating a welcome
+                guide document on Confluence with 4 payment developers based
+                overseas.
               </Text>
             </TimelineContent>
           </TimelineItem>
@@ -182,17 +184,17 @@ export default function About() {
               <TimelineDot />
             </TimelineSeparator>
             <TimelineContent>
-            <Text>
-              <b>Full Stack Intern @ Commit to Green</b>
-              {"\n"}
-              I improved readaility in the company's product website in 2
-              weeks by sharpening the product website design with 5 full stack
-              interns, 1 UX/UI desinger, and the founder using Figma. I also
-              boosted the company's confidence in its direction for its product
-              website. I did this by communicating the design-to-real life
-              transformation to the founder consistently with 5 full stack
-              interns using the following: Visual Studio Code, Git/GitHub,
-              React, Material-UI, Postman, Mongoose.js, Node.js, and Express.js.
+              <Text>
+                <b>Full Stack Intern @ Commit to Green</b>
+                {"\n"}I improved readaility in the company's product website in
+                2 weeks by sharpening the product website design with 5 full
+                stack interns, 1 UX/UI desinger, and the founder using Figma. I
+                also boosted the company's confidence in its direction for its
+                product website. I did this by communicating the design-to-real
+                life transformation to the founder consistently with 5 full
+                stack interns using the following: Visual Studio Code,
+                Git/GitHub, React, Material-UI, Postman, Mongoose.js, Node.js,
+                and Express.js.
               </Text>
             </TimelineContent>
           </TimelineItem>
