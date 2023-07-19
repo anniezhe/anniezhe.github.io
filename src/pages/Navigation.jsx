@@ -1,6 +1,6 @@
 import * as React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import { Navbar } from "react-bootstrap";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -94,6 +94,7 @@ export default function Navigation() {
           </Navbar>
         )}
       />
+      <Outlet />
     </div>
   );
 }
