@@ -215,13 +215,13 @@ export default function About() {
                 href="https://www.linkedin.com/in/anniezhe0"
                 className="me-4 text-reset"
               >
-                <MDBIcon color="secondary" fab icon="linkedin" />
+                <MDBIcon color="secondary" fab icon="linkedin" size="2x" />
               </a>
               <a
                 href="https://www.github.com/anniezhe"
                 className="me-4 text-reset"
               >
-                <MDBIcon color="secondary" fab icon="github" />
+                <MDBIcon color="secondary" fab icon="github" size="2x" />
               </a>
             </div>
           </section>
@@ -236,7 +236,7 @@ export default function About() {
                   <p>
                     The codebase for my website is here{" "}
                     <a href="https://github.com/anniezhe/porfolio">GitHub</a>.
-                    My domain is obtained from Google Domains. Made in NYC!
+                    My domain is obtained from Google Domains. Made by yours truly, Annie He.❤️
                   </p>
                 </MDBCol>
 
