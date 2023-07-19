@@ -51,7 +51,7 @@ export default function About() {
               I was interested in STEM fields, but math wasn't my strongest
               suit. I wasn't ready to fully embrace STEM, so I spent a good
               portion of my life on exploring creative fields. It wasn't until
-              my very first internship that made me took a U-turn.
+              my very first internship that made me take a U-turn.
             </TimelineContent>
           </TimelineItem>
           <TimelineItem>
@@ -148,7 +148,7 @@ export default function About() {
                 time, I strengthened 21 students' ability to connect with the
                 web development course by communicating real life scenarios to
                 them consistently. I did this to ensure that they can achieve
-                good understanding of a topic and posess the motivation to
+                a good understanding of a topic and posess the motivation to
                 continue learning a topic outside of the Zoom classroom.
               </Text>
             </TimelineContent>
