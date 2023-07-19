@@ -3,7 +3,7 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import About from "./pages/About";
 import Home from "./pages/Home";
-import Layout from "./pages/Layout"
+import Layout from "./pages/Layout";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 
