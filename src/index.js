@@ -1,9 +1,9 @@
 import React from "react";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import Navigation from "./pages/Navigation";
 import About from "./pages/About";
 import Home from "./pages/Home";
+import Layout from "./pages/Layout"
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 
@@ -11,10 +11,11 @@ const domNode = document.getElementById("root");
 const root = createRoot(domNode);
 root.render(
   <BrowserRouter>
-    <Navigation />
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Route>
     </Routes>
   </BrowserRouter>
 );
