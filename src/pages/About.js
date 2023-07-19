@@ -186,7 +186,7 @@ export default function About() {
             <TimelineContent>
               <Text>
                 <b>Full Stack Intern @ Commit to Green</b>
-                {"\n"}I improved readaility in the company's product website in
+                {"\n"}I improved readability in the company's product website in
                 2 weeks by sharpening the product website design with 5 full
                 stack interns, 1 UX/UI desinger, and the founder using Figma. I
                 also boosted the company's confidence in its direction for its
