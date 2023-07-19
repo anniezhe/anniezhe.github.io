@@ -1,11 +1,9 @@
 import * as React from "react";
 
-const Project = () => {
+export default function Project () {
   return (
     <div className="project">
       <p>How are you?</p>
     </div>
   );
 }
-
-export default Project;

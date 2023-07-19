@@ -10,7 +10,7 @@ import Menu from "@mui/material/Menu";
 import Media from "react-media";
 import Button from "react-bootstrap/Button";
 
-function App() {
+export default function Navigation() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -41,21 +41,6 @@ function App() {
                     <NavLink className="nav-link" to="/about">
                       About
                     </NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink className="nav-link" to="/contact">
-                      Contact
-                    </NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <Button
-                      variant="primary"
-                      href="Annie_He_resume.pdf"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Get My Resume
-                    </Button>
                   </li>
                 </ul>
               </div>
@@ -104,19 +89,6 @@ function App() {
                   <MenuItem onClick={handleClose}>
                     <NavLink to="/about">About</NavLink>
                   </MenuItem>
-                  <MenuItem onClick={handleClose}>
-                    <NavLink to="/contact">Contact</NavLink>
-                  </MenuItem>
-                  <MenuItem onClick={handleClose}>
-                    <Button
-                      variant="primary"
-                      href="Annie_He_resume.pdf"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Get My Resume
-                    </Button>
-                  </MenuItem>
                 </Menu>
               </Container>
             </ul>
@@ -126,5 +98,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
