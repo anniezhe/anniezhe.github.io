@@ -22,7 +22,7 @@ export default function Navigation() {
   return (
     <div className="navigation">
       <Media
-        query={{ minWidth: 500 }}
+        query={{ minWidth: 300 }}
         render={() => (
           <Navbar sticky="top">
             <div className="container">
@@ -48,7 +48,7 @@ export default function Navigation() {
         )}
       />
       <Media
-        query={{ maxWidth: 500 }}
+        query={{ maxWidth: 300 }}
         render={() => (
           <Navbar sticky="top">
             <div className="container">
