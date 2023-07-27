@@ -109,8 +109,9 @@ export default function About() {
               <TimelineDot color="primary" />
             </TimelineSeparator>
             <TimelineContent>
-              I am a data analytics apprentice at COOP Careers. I aspire to
-              become a data scientist.
+              I am a data analyst fellow at the NYC Taxi and Limousine
+              Commission. I am also a data analytics apprentice at COOP Careers.
+              I aspire to become a data scientist.
             </TimelineContent>
           </TimelineItem>
         </Timeline>
@@ -147,8 +148,8 @@ export default function About() {
                 encourage them to pursue their dream tech careers. During class
                 time, I strengthened 21 students' ability to connect with the
                 web development course by communicating real life scenarios to
-                them consistently. I did this to ensure that they can achieve
-                a good understanding of a topic and posess the motivation to
+                them consistently. I did this to ensure that they can achieve a
+                good understanding of a topic and posess the motivation to
                 continue learning a topic outside of the Zoom classroom.
               </Text>
             </TimelineContent>
@@ -236,7 +237,8 @@ export default function About() {
                   <p>
                     The codebase for my website is here{" "}
                     <a href="https://github.com/anniezhe/porfolio">GitHub</a>.
-                    My domain is obtained from Google Domains. Made by yours truly, Annie He.❤️
+                    My domain is obtained from Google Domains. Made by yours
+                    truly, Annie He.❤️
                   </p>
                 </MDBCol>
 
