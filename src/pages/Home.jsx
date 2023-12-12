@@ -165,6 +165,36 @@ export default function Home() {
                 </Card.Body>
               </Card>
             </Col>
+            <Col sx="6">
+              <Card style={{ width: "16rem" }}>
+              <Card.Img variant="top" src="complaints_issue_types1.png" />
+                <Card.Body>
+                  <Card.Title>
+                  2022-2023 Consumer Financial Protection Bureau (CFPB) Complaint Report
+                  </Card.Title>
+                  <Card.Text>
+                    I analyzed the complaint datasets using SQL from Google BigQuery and Tableau on December 2023.
+                  </Card.Text>
+                  <Button
+                    variant="primary"
+                    href="https://github.com/anniezhe/cfpb_complaint_dataset"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </Button>
+                  <span>&nbsp;&nbsp;</span>
+                  <Button
+                    variant="primary"
+                    href="https://public.tableau.com/views/ComplaintstoConsumerFinancialProtectionBureau2022-2023/complaints_issue_types?:language=en-US&:display_count=n&:origin=viz_share_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Tableau
+                  </Button>
+                </Card.Body>
+              </Card>
+            </Col>
           </Row>
         </Container>
       </div>

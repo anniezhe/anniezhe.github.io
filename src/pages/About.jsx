@@ -96,7 +96,7 @@ export default function About() {
               love with mathematical models. I really like playing with them. I
               find the idea of using them to achieve desirable results really
               fascinating. Eventually, I found the answer to my question. I want
-              to pursue a career in Artificial Intelligence/Machine Learning. I
+              to pursue a career in Artificial Intelligence/Machine Learning. On June 2023, I
               graduated with a bachelor's degree in Applied Mathematics with a
               concentration in Data Science and minored in Computer Science.
             </TimelineContent>
@@ -133,10 +133,24 @@ export default function About() {
         >
           <TimelineItem>
             <TimelineOppositeContent color="textPrimary">
-              January 2023 - April 2023
+              August 2023 - Present
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineDot color="primary" />
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>
+              <Text>
+                <b>Data Analytics Fellow @ NYC Taxi and Limousine Commission</b>
+              </Text>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineOppositeContent color="textSecondary">
+              January 2023 - April 2023
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineDot />
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
