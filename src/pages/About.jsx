@@ -339,10 +339,6 @@ export default function About() {
                     />
                     <a href="mailto:anniezhe0@gmail.com">anniezhe0@gmail.com</a>
                   </p>
-                  <p>
-                    <MDBIcon color="secondary" icon="phone" className="me-3" />{" "}
-                    +1 (929) 577-6615
-                  </p>
                 </MDBCol>
               </MDBRow>
             </MDBContainer>
