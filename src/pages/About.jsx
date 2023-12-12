@@ -25,8 +25,8 @@ export default function About() {
         <div className="section1">
           <h1>About Me</h1>
           <p>
-            I like mathematical models, and I'm exploring Artificial
-            Intelligence field. How I got here wasn't straightforward at all.
+            I like doing math and coding together. I'm exploring Artificial
+            Intelligence, Data Science, Data Analytics, Machine Learning, and other similar fields. How I got here wasn't straightforward at all.
             Spoiler alert: I didn't always stick to STEM. There were many twists
             and turns throughout my entire career journey.
           </p>
@@ -96,9 +96,25 @@ export default function About() {
               love with mathematical models. I really like playing with them. I
               find the idea of using them to achieve desirable results really
               fascinating. Eventually, I found the answer to my question. I want
-              to pursue a career in Artificial Intelligence/Machine Learning. I
+              to pursue a career in Artificial Intelligence/Machine Learning. On June 2023, I
               graduated with a bachelor's degree in Applied Mathematics with a
               concentration in Data Science and minored in Computer Science.
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineOppositeContent color="textSecondary">
+              COOP + Google Data Analytics Certificate Program
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineDot />
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>
+              I started participating the COOP's Data Analytics track program virtually on August 2023.
+              I learned alot about data analytics during my time there like how to clean data, 
+              how to make beautiful and accessible-friendly visualization, 
+              and how to analyze data. I also participated the Google Data Analytics certificate program.
+              On December 2023, I acquired the Google Data Analytics certificate.
             </TimelineContent>
           </TimelineItem>
           <TimelineItem>
@@ -133,10 +149,24 @@ export default function About() {
         >
           <TimelineItem>
             <TimelineOppositeContent color="textPrimary">
-              January 2023 - April 2023
+              August 2023 - Present
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineDot color="primary" />
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>
+              <Text>
+                <b>Data Analytics Fellow @ NYC Taxi and Limousine Commission</b>
+              </Text>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineOppositeContent color="textSecondary">
+              January 2023 - April 2023
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineDot />
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>

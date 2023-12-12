@@ -20,7 +20,7 @@ export default function Home() {
         <h1>Annie He</h1>
         <p>
           I'm a data analyst fellow at the NYC Taxi and Limousine Commission.
-          I'm also a data analytics apprentice at COOP Careers. I recently
+          I recently
           graduated with a bachelor's degree in Applied Mathematics with a
           concentration in Data Science. During my time as an undergraduate
           student, I minored in Computer Science. I aspire to become a data
@@ -161,6 +161,36 @@ export default function Home() {
                     rel="noopener noreferrer"
                   >
                     Medium
+                  </Button>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col sx="6">
+              <Card style={{ width: "16rem" }}>
+              <Card.Img variant="top" src="complaints_issue_types1.png" />
+                <Card.Body>
+                  <Card.Title>
+                  2022-2023 Consumer Financial Protection Bureau (CFPB) Complaint Report
+                  </Card.Title>
+                  <Card.Text>
+                    I analyzed the complaint datasets using SQL from Google BigQuery and Tableau on December 2023.
+                  </Card.Text>
+                  <Button
+                    variant="primary"
+                    href="https://github.com/anniezhe/cfpb_complaint_dataset"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </Button>
+                  <span>&nbsp;&nbsp;</span>
+                  <Button
+                    variant="primary"
+                    href="https://public.tableau.com/views/ComplaintstoConsumerFinancialProtectionBureau2022-2023/complaints_issue_types?:language=en-US&:display_count=n&:origin=viz_share_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Tableau
                   </Button>
                 </Card.Body>
               </Card>
