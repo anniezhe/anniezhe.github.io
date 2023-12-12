@@ -20,7 +20,7 @@ export default function Home() {
         <h1>Annie He</h1>
         <p>
           I'm a data analyst fellow at the NYC Taxi and Limousine Commission.
-          I'm also a data analytics apprentice at COOP Careers. I recently
+          I recently
           graduated with a bachelor's degree in Applied Mathematics with a
           concentration in Data Science. During my time as an undergraduate
           student, I minored in Computer Science. I aspire to become a data

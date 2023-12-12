@@ -102,6 +102,22 @@ export default function About() {
             </TimelineContent>
           </TimelineItem>
           <TimelineItem>
+            <TimelineOppositeContent color="textSecondary">
+              COOP + Google Data Analytics Certificate Program
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineDot />
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>
+              I started participating the COOP's Data Analytics track program virtually on August 2023.
+              I learned alot about data analytics during my time there like how to clean data, 
+              how to make beautiful and accessible-friendly visualization, 
+              and how to analyze data. I also participated the Google Data Analytics certificate program.
+              On December 2023, I acquired the Google Data Analytics certificate.
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
             <TimelineOppositeContent color="textPrimary">
               Current
             </TimelineOppositeContent>
