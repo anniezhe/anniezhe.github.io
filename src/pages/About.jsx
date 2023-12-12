@@ -25,8 +25,8 @@ export default function About() {
         <div className="section1">
           <h1>About Me</h1>
           <p>
-            I like mathematical models, and I'm exploring Artificial
-            Intelligence field. How I got here wasn't straightforward at all.
+            I like doing math and coding together. I'm exploring Artificial
+            Intelligence, Data Science, Data Analytics, Machine Learning, and other similar fields. How I got here wasn't straightforward at all.
             Spoiler alert: I didn't always stick to STEM. There were many twists
             and turns throughout my entire career journey.
           </p>
