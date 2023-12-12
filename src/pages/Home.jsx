@@ -240,60 +240,13 @@ export default function Home() {
                 </MDBCol>
 
                 <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
-                  <h6 className="text-uppercase fw-bold mb-4">
-                    Web Development
+                <h6>
+                    <img src="google-data-analytics-certificate.2.png" alt="Google Data Analytics Badge" width = "150px" />
                   </h6>
-                  <p>
-                    <a
-                      href="https://www.simplilearn.com/tutorials/html-tutorial/html-vs-css"
-                      className="text-reset"
-                    >
-                      HTML/CSS
-                    </a>
-                  </p>
-                  <p>
-                    <a
-                      href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                      className="text-reset"
-                    >
-                      JavaScript
-                    </a>
-                  </p>
-                  <p>
-                    <a href="https://react.dev/" className="text-reset">
-                      React
-                    </a>
-                  </p>
-                  <p>
-                    <a
-                      href="https://www.geeksforgeeks.org/how-to-use-bootstrap-with-react/"
-                      className="text-reset"
-                    >
-                      Bootstrap with React
-                    </a>
-                  </p>
                 </MDBCol>
 
                 <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
-                  <h6 className="text-uppercase fw-bold mb-4">Data Science</h6>
-                  <p>
-                    <a href="https://www.python.org/" className="text-reset">
-                      Python
-                    </a>
-                  </p>
-                  <p>
-                    <a href="https://jupyter.org/" className="text-reset">
-                      Jupyter Notebook
-                    </a>
-                  </p>
-                  <p>
-                    <a
-                      href="https://www.geeksforgeeks.org/libraries-in-python/"
-                      className="text-reset"
-                    >
-                      Python Libraries
-                    </a>
-                  </p>
+                  
                 </MDBCol>
 
                 <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
