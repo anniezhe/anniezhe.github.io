@@ -1,5 +1,6 @@
-.project{
-    display: flexbox;
-    max-width: fit-content;
-    max-height: fit-content;
+.home{
+    height: 100%;
+    padding: 10%;
+    background-color: lightgray;
+    text-align: center;
 }

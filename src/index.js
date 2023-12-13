@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Layout from "./pages/Layout";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import { createRoot } from "react-dom/client";
+import Project from "./pages/Project";
 const root = createRoot(document.getElementById('root'));
 root.render(
   <HashRouter>
@@ -13,6 +14,7 @@ root.render(
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/project" element={<Project />} />
       </Route>
     </Routes>
   </HashRouter>

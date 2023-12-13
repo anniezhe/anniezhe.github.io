@@ -40,26 +40,6 @@ export default function Home() {
           <Row>
             <Col sx="true">
               <Card style={{ width: "16rem" }}>
-                <Card.Img variant="top" src="card1.png" />
-                <Card.Body>
-                  <Card.Title>Dear People Who Are Looking for Jobs</Card.Title>
-                  <Card.Text>
-                    I wrote and published this article on LinkedIn on January
-                    2023 in light of the layoffs.
-                  </Card.Text>
-                  <Button
-                    variant="primary"
-                    href="https://www.linkedin.com/pulse/dear-people-who-looking-jobs-annie-he?utm_source=share&utm_medium=member_ios&utm_campaign=share_via"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    LinkedIn
-                  </Button>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col sx="true">
-              <Card style={{ width: "16rem" }}>
                 <Card.Img variant="top" src="card2.png" />
                 <Card.Body>
                   <Card.Title>
@@ -104,43 +84,42 @@ export default function Home() {
                 </Card.Body>
               </Card>
             </Col>
+            <Col sx="true">
+              <Card style={{ width: "16rem" }}>
+                <Card.Img variant="top" src="mongodbconference.jpeg" />
+                <Card.Body>
+                  <Card.Title>
+                  A Commentary on How the “Joan is Awful” Episode Connects to Real-World Issues
+                  </Card.Title>
+                  <Card.Text>
+                    I wrote and published this article on Medium on August 2023 to share my thoughts on the connection between issues presented in both the episode and the real world. 
+                  </Card.Text>
+                  <Button
+                    variant="primary"
+                    href="https://medium.com/@anniezhe0/a-commentary-on-how-the-joan-is-awful-episode-connects-to-real-world-issues-332b041deab9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Medium
+                  </Button>
+                </Card.Body>
+              </Card>
+            </Col>
           </Row>
         </Container>
       </div>
       <div className="section3 background">
         <div className="section3intro">
-          <h1>Developer + Data Science</h1>
+          <h1>Data Science/Data Analytics</h1>
           <p>
             Math and coding are the two fascinating areas that work together to
             make awesome things. I'm always amazed with their capabilities. Here
-            are some of the projects where I've used math and/or coding:
+            are some of the projects where I've used math and coding:
           </p>
         </div>
 
         <Container>
           <Row>
-            <Col sx="6">
-              <Card style={{ width: "16rem" }}>
-                <Card.Img variant="top" src="card4.png" />
-                <Card.Body>
-                  <Card.Title>
-                    Computer Science Society Club's Website
-                  </Card.Title>
-                  <Card.Text>
-                    I collaborated with two student executives on January 2022
-                    to make a website for the Computer Science Society club.
-                  </Card.Text>
-                  <Button
-                    variant="primary"
-                    href="https://jjaycss.tech/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Club Website
-                  </Button>
-                </Card.Body>
-              </Card>
-            </Col>
             <Col sx="6">
               <Card style={{ width: "16rem" }}>
                 <Card.Img variant="top" src="card5.png" />
@@ -177,20 +156,11 @@ export default function Home() {
                   </Card.Text>
                   <Button
                     variant="primary"
-                    href="https://github.com/anniezhe/cfpb_complaint_dataset"
+                    href="https://1drv.ms/p/s!AhOarSouCBto9VOAqsePDZ-igA9z?e=h3EbN3"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    GitHub
-                  </Button>
-                  <span>&nbsp;&nbsp;</span>
-                  <Button
-                    variant="primary"
-                    href="https://public.tableau.com/views/ComplaintstoConsumerFinancialProtectionBureau2022-2023/complaints_issue_types?:language=en-US&:display_count=n&:origin=viz_share_link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Tableau
+                    2022-2023 CFPB Complaint Report
                   </Button>
                 </Card.Body>
               </Card>
@@ -198,7 +168,7 @@ export default function Home() {
           </Row>
         </Container>
       </div>
-      <div className="section4">
+      <div>
         <MDBFooter
           bgColor="light"
           className="text-center text-lg-start text-black"
@@ -243,10 +213,6 @@ export default function Home() {
                 <h6>
                     <img src="google-data-analytics-certificate.2.png" alt="Google Data Analytics Badge" width = "150px" />
                   </h6>
-                </MDBCol>
-
-                <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
-                  
                 </MDBCol>
 
                 <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
