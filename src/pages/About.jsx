@@ -274,7 +274,7 @@ export default function About() {
 
                 <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
                 <h6>
-                    <img src="google-data-analytics-certificate.2.png" alt="Google Data Analytics Badge" width = "150px" />
+                    <img src="google-data-analytics-certificate.2.png" alt="Google Data Analytics Badge" width = "170px" />
                   </h6>
                 </MDBCol>
 
