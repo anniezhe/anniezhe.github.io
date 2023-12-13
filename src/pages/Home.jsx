@@ -110,7 +110,7 @@ export default function Home() {
       </div>
       <div className="section3 background">
         <div className="section3intro">
-          <h1>Data Science/Data Analytics</h1>
+          <h1>Data Science + Data Analytics</h1>
           <p>
             Math and coding are the two fascinating areas that work together to
             make awesome things. I'm always amazed with their capabilities. Here
