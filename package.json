@@ -17,7 +17,7 @@
     "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
     "react-media": "^1.10.0",
-    "react-native": "^0.73.0",
+    "react-native": "^0.73.3",
     "react-native-web": "^0.19.9",
     "react-router-dom": "^6.20.1",
     "web-vitals": "^3.5.0"
