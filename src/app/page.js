@@ -9,14 +9,13 @@ export default function Home() {
           <Image
             src="/annie_logo.svg"
             alt="Annie He's Logo"
-            className={styles.vercelLogo}
+            className={styles.annieLogo}
             width={100}
             height={70}
             priority
           />
         </div>
       </div>
-
       <div className={styles.center}>
         <h1>COMING SOON!</h1>
       </div>
