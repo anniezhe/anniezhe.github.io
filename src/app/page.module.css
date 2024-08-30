@@ -5,6 +5,8 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  background-color: white;
+  color: black;
 }
 
 .description {
@@ -29,7 +31,6 @@
   position: relative;
   margin: 0;
   padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
   border-radius: var(--border-radius);
 }
@@ -214,7 +215,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .annieLogo {
+  .vercelLogo {
     filter: invert(1);
   }
 
