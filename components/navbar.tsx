@@ -8,30 +8,24 @@ import {
   NavbarMenuItem,
 } from "@nextui-org/navbar";
 import { Button } from "@nextui-org/button";
-
 import { Link } from "@nextui-org/link";
-
+import annieLogo from "../public/annieLogo.png";
 import NextLink from "next/link";
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-import {
-  TwitterIcon,
+import { 
+  LinkedinIcon,
   GithubIcon,
-  DiscordIcon,
-  HeartFilledIcon,
-  SearchIcon,
-  Logo,
+  MailIcon,
 } from "@/components/icons";
-
 export const Navbar = () => {
 
   return (
-    <NextUINavbar maxWidth="xl" position="sticky">
+    <NextUINavbar maxWidth="xl" isBordered>
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
-            <Logo />
-            <p className="font-bold text-inherit">ACME</p>
+            <img width={70} alt="Annie He" src={annieLogo.src} />
           </NextLink>
         </NavbarBrand>
         <div className="hidden lg:flex gap-4 justify-start ml-2">
@@ -53,7 +47,9 @@ export const Navbar = () => {
         justify="end"
       >
         <NavbarItem className="hidden sm:flex gap-2">
-          
+        <Link isExternal href={siteConfig.links.linkedin}>
+            <LinkedinIcon className="text-default-500" />
+          </Link>
           <Link isExternal href={siteConfig.links.github}>
             <GithubIcon className="text-default-500" />
           </Link>
@@ -66,7 +62,7 @@ export const Navbar = () => {
             as={Link}
             className="text-sm font-normal text-default-600 bg-default-100"
             href={siteConfig.links.contact}
-            startContent={<HeartFilledIcon className="text-danger" />}
+            startContent={<MailIcon className="text-danger" />}
             variant="flat"
           >
             Contact Me
