@@ -75,7 +75,13 @@ export default function IndexPage() {
                     - rejected medical claims in health insurance
                     <br />
                     <br />
-                    In my personal experience, I had to wait 3 weeks to get a simple, life-saving medical treatment, which was not acceptable. My goal is to be a part of the solution by performing data analysis.
+                    In my personal experience, I had to wait 3 weeks to get a simple, life-saving medical treatment, which was not acceptable. 
+                    <br />
+                    <br />
+                    My goal is to be a part of the solution by doing three things:
+                    - performing data analysis
+                    - identifying and getting rid of what is not working 
+                    - identifying and keeping what is working and continue to build on it
                   </span>
                 </CardBody>
               </Card>
