@@ -79,6 +79,7 @@ export default function IndexPage() {
                     <br />
                     <br />
                     My goal is to be a part of the solution by doing three things:
+                    <br />
                     - performing data analysis
                     <br />
                     - identifying what is not working and helping to get rid of it
