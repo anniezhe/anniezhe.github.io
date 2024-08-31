@@ -69,7 +69,7 @@ export const Navbar = () => {
             <ModalContent>
               {(onClose) => (
                 <>
-                  <ModalHeader className="flex flex-col gap-1">I'm excited about the opportunity for us to meet! But first...</ModalHeader>
+                  <ModalHeader className="flex flex-col gap-1">I'm excited about the opportunity for us to connect! But first...</ModalHeader>
                   <ModalBody>
                     <p>
                       I am based in New York City, so my timezone, Eastern Time, may be different from yours and that's okay!
