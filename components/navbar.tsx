@@ -20,6 +20,7 @@ import {
 } from "@/components/icons";
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
 
+
 export const Navbar = () => {
 
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -69,23 +70,13 @@ export const Navbar = () => {
             <ModalContent>
               {(onClose) => (
                 <>
-                  <ModalHeader className="flex flex-col gap-1">I'm excited about the opportunity for us to connect! But first...</ModalHeader>
+                  <ModalHeader className="flex flex-col">Here's my contact info</ModalHeader>
                   <ModalBody>
-                    <p>
-                      I am based in New York City, so my timezone, Eastern Time, may be different from yours and that's okay!
-                      Please send me an email at a time that works for you.
-                      I will do my best to get back to you within 24 to 48 hours. 
-                    </p>
-                    <p>
-                      If you would like to send me an email using your preferred email address or software application, then my email address is anniezhe0@gmail.com
-                    </p>
+                    <h4>If you have any questions or concerns, my email address is anniezhe0@gmail.com. I am based in New York City, so my timezone, Eastern Time, may be different from yours and that's okay!
+                      Please send me an email at a time that works for you. I will do my best to get back to you within 24 to 48 hours.</h4>
                   </ModalBody>
                   <ModalFooter>
-                    <Button color="primary" onPress={onClose} isExternal
-                      as={Link}
-                      href={siteConfig.links.contact}>
-                      Email Me Using Your Default Application
-                    </Button>
+                    
                   </ModalFooter>
                 </>
               )}

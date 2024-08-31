@@ -11,6 +11,8 @@ import { Table, TableHeader, TableColumn, TableBody, TableRow, TableCell } from 
 import GoogleAnalyticsCert from "../public/google-data-analytics-certificate.png";
 import IBMDataAICert from "../public/ibm-machine-learning-specialist-associate.png";
 import { useRouter } from 'next/router';
+import CalendlyEmbed from "./../components/Calendly";
+
 export default function IndexPage() {
   const router = useRouter()
   return (
@@ -208,6 +210,10 @@ export default function IndexPage() {
             </Tab>
           </Tabs>
         </div>
+        <div className = "mt-8">
+          <h1 className={title()}>Interested in connecting with me?</h1>
+        </div>
+        <CalendlyEmbed url="https://calendly.com/anniezhe0/30min" />
       </section>
     </DefaultLayout>
   );
