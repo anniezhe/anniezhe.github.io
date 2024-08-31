@@ -80,8 +80,8 @@ export default function IndexPage() {
                     <br />
                     My goal is to be a part of the solution by doing three things:
                     - performing data analysis
-                    - identifying and getting rid of what is not working 
-                    - identifying and keeping what is working and continue to build on it
+                    - identifying what is not working and helping to get rid of it
+                    - identifying what is working and helping to continue building on it
                   </span>
                 </CardBody>
               </Card>
