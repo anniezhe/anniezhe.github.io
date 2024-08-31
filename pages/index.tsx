@@ -70,7 +70,7 @@ export default function IndexPage() {
                     <br />
                     - cancer diagnosis with younger generations
                     <br />
-                    - older generations retiring from the workforce
+                    - older generations retiring from the workforce with health problems
                     <br />
                     - rejected medical claims in health insurance
                     <br />
@@ -82,9 +82,9 @@ export default function IndexPage() {
                     <br />
                     - performing data analysis
                     <br />
-                    - identifying what is not working and helping to get rid of it
+                    - identifying and getting rid of what is not working
                     <br />
-                    - identifying what is working and helping to continue building on it
+                    - identifying and keeping what is working and continue to build on it
                   </span>
                 </CardBody>
               </Card>
