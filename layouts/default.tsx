@@ -3,7 +3,7 @@ import { Link } from "@nextui-org/link";
 import { Head } from "./head";
 
 import { Navbar } from "@/components/navbar";
-
+import { GoogleAnalytics } from '@next/third-parties/google';
 export default function DefaultLayout({
   children,
 }: {
@@ -13,12 +13,16 @@ export default function DefaultLayout({
     <div className="relative flex flex-col h-screen">
       <Head />
       <Navbar />
+      <GoogleAnalytics gaId="G-MHBR3D7FM7" />
       <main className="container mx-auto max-w-7xl px-6 flex-grow pt-16">
         {children}
       </main>
       <footer className="w-full flex items-center justify-center py-3">
-      <span className="text-default-600">Made in NYC by yours truly!</span>
+      <span className="text-default-600">Made in NYC by yours truly! Powered by {" "}
+       <Link href="https://nextui.org/"> NextUI</Link>.
+      </span>
       </footer>
     </div>
   );
 }
+

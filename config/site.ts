@@ -4,18 +4,18 @@ export const siteConfig = {
   name: "Annie He",
   description: "Welcome to my portfolio website!",
   navItems: [
-    {
-      label: "Home",
-      href: "/",
-    },
-    {
-      label: "About",
-      href: "/about",
-    },
-    {
-      label: "Archived Projects",
-      href: "/archive",
-    },
+    // {
+    //   label: "Home",
+    //   href: "/",
+    // },
+    // {
+    //   label: "About",
+    //   href: "/about",
+    // },
+    // {
+    //   label: "Archived Projects",
+    //   href: "/archive",
+    // },
     // {
     //   label: "Pricing",
     //   href: "/pricing",
@@ -63,6 +63,7 @@ export const siteConfig = {
   links: {
     github: "https://github.com/anniezhe",
     contact: "mailto:anniezhe0@gmail.com",
-    linkedin: "https://linkedin.com/in/anniezhe0"
+    linkedin: "https://linkedin.com/in/anniezhe0",
+    medium: "https://medium.com/@anniezhe0/about",
   },
 };
