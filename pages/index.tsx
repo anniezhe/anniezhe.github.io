@@ -63,7 +63,7 @@ export default function IndexPage() {
               <Card>
                 <CardBody>
                   <span>
-                    I want to see a future where everyone in the United States has access to healthcare treatments in a timely manner.
+                    I want to see a future where everyone in the United States has access to essential healthcare treatments in a timely manner.
                     <br />
                     <br />
                     It is critical for the United States to have access life-saving healthcare treatments within the next decade. To name a few, there's an increasing amount of the following in recent years:
@@ -80,7 +80,9 @@ export default function IndexPage() {
                     <br />
                     My goal is to be a part of the solution by doing three things:
                     - performing data analysis
+                    <br />
                     - identifying what is not working and helping to get rid of it
+                    <br />
                     - identifying what is working and helping to continue building on it
                   </span>
                 </CardBody>
