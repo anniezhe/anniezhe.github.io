@@ -114,7 +114,7 @@ export default function IndexPage() {
                       <TableColumn>Completed Month and Year</TableColumn>
                     </TableHeader>
                     <TableBody>
-                    <TableRow key="1">
+                      <TableRow key="1">
                         <TableCell><Link href="https://medium.com/@anniezhe0/using-random-forest-regression-model-on-the-mastercards-stock-data-itself-1a069ad9934a">Using Random Forest Regression Model on the Mastercard’s Stock Data Itself</Link></TableCell>
                         <TableCell>April 2023</TableCell>
                       </TableRow>
@@ -122,7 +122,7 @@ export default function IndexPage() {
                         <TableCell><Link href="https://github.com/anniezhe/cfpb_complaint_dataset">2022-2023 Consumer Financial Protection Bureau (CFPB) Complaint Report</Link></TableCell>
                         <TableCell>December 2023</TableCell>
                       </TableRow>
-                      
+
                     </TableBody>
                   </Table>
                 </CardBody>
@@ -170,7 +170,7 @@ export default function IndexPage() {
                   <br />
                   <h4 className="text-large font-bold">Professional Certificates</h4>
                   <p>Click on any one of them below to see more information.</p>
-                  <br/>
+                  <br />
                   <div className="gap-2 grid grid-cols-2 sm:grid-cols-4">
                     <Link href="https://www.credly.com/badges/36373614-98a6-41e3-afe9-97cc427d2027/public_url">
                       <Card className="py-4">
@@ -210,10 +210,17 @@ export default function IndexPage() {
             </Tab>
           </Tabs>
         </div>
-        <div className = "mt-8">
+        <div className="mt-8 ">
           <h1 className={title()}>Interested in connecting with me?</h1>
+          <br />
+          <br />
+          <Card>
+          <CardBody>
+            <CalendlyEmbed url="https://calendly.com/anniezhe0/30min" />
+          </CardBody>
+        </Card>
         </div>
-        <CalendlyEmbed url="https://calendly.com/anniezhe0/30min" />
+        
       </section>
     </DefaultLayout>
   );
