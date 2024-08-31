@@ -84,7 +84,7 @@ export default function IndexPage() {
               <Card>
                 <CardBody>
                   <span>
-                    I have nearly a year of work experience doing data analysis for city government, which churned out critical information for senior leadership across the division.
+                    I have a year of work experience doing data analysis for New York City government, which churned out critical information for senior leadership across the division.
 
                     I deploy a context-based approach to effectively analyze and extract information from the data.
                     <br />
