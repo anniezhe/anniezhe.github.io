@@ -58,9 +58,9 @@ export default function IndexPage() {
           <h1 className={title()}>More About Me</h1>
         </div>
         <div className="flex w-full flex-col">
-          <Tabs aria-label="Options" size="lg" color="primary" variant="underlined">
+          <Tabs aria-label="Options" size="lg" color="warning" variant="underlined" style={{fontWeight: "bold"}}>
             <Tab key="mission" title="Mission">
-              <Card>
+              <Card style={{border: '1.5px solid #F09600'}}>
                 <CardBody>
                   <span>
                     I want to see a future where everyone in the United States has access to essential healthcare treatments in a timely manner.
@@ -89,8 +89,8 @@ export default function IndexPage() {
                 </CardBody>
               </Card>
             </Tab>
-            <Tab key="background" title="Background">
-              <Card>
+            <Tab key="background" title="Background" >
+              <Card style={{border: '1.5px solid #F09600'}}>
                 <CardBody>
                   <span>
                     I have a year of work experience doing data analysis for New York City government, which churned out critical information for senior leadership across the division.
@@ -114,7 +114,7 @@ export default function IndexPage() {
               </Card>
             </Tab>
             <Tab key="projects" title="Projects">
-              <Card>
+              <Card style={{border: '1.5px solid #F09600'}}>
                 <CardBody>
                   <Table isStriped aria-label="Projects Table">
                     <TableHeader>
@@ -138,7 +138,7 @@ export default function IndexPage() {
               </Card>
             </Tab>
             <Tab key="skills" title="Skills + Certificates">
-              <Card>
+              <Card style={{border: '1.5px solid #F09600'}}>
                 <CardBody>
                   <h4 className="text-large font-bold">Skills</h4>
                   <br />
