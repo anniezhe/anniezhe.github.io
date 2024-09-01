@@ -2,7 +2,7 @@
 
 My website is built using a provided template from Next.js 14 (pages directory) and NextUI (v2).
 
-[Try it on CodeSandbox](https://githubbox.com/nextui-org/next-pages-template)
+[Try the template on CodeSandbox](https://githubbox.com/nextui-org/next-pages-template)
 
 >Note: Since Next.js 14, the pages router is recommend migrating to the [new App Router](https://nextjs.org/docs/app) to leverage React's latest features
 >
