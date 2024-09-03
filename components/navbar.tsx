@@ -52,12 +52,12 @@ export const Navbar = () => {
         justify="end"
       >
         <NavbarItem className="lg:flex gap-2">
-          <Tooltip showArrow={true} content="Click here to see my LinkedIn">
+          <Tooltip showArrow={true} content="Click here to see my LinkedIn.">
             <Link isExternal href={siteConfig.links.linkedin}>
               <LinkedinIcon className="text-default-500" />
             </Link>
           </Tooltip>
-          <Tooltip showArrow={true} content="Click here to see my GitHub">
+          <Tooltip showArrow={true} content="Click here to see my GitHub.">
             <Link isExternal href={siteConfig.links.github}>
               <GithubIcon className="text-default-500" />
             </Link>
