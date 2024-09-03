@@ -3,6 +3,7 @@ import { VisuallyHidden } from "@react-aria/visually-hidden";
 import { SwitchProps, useSwitch } from "@nextui-org/switch";
 import { useTheme } from "next-themes";
 import clsx from "clsx";
+import { Tooltip } from "@nextui-org/react";
 
 import { SunFilledIcon, MoonFilledIcon } from "@/components/icons";
 
@@ -43,6 +44,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
   if (!isMounted) return <div className="w-6 h-6" />;
 
   return (
+    <Tooltip showArrow={true} content="Click here to change my website's background color.">
     <Component
       {...getBaseProps({
         className: clsx(
@@ -74,12 +76,15 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
           ),
         })}
       >
-        {isSelected ? (
-          <MoonFilledIcon size={22} />
-        ) : (
-          <SunFilledIcon size={22} />
-        )}
-      </div>
-    </Component>
+        
+          {isSelected ? (
+            <MoonFilledIcon size={22} />
+          ) : (
+            <SunFilledIcon size={22} />
+          )}
+        
+    </div>
+    </Component >
+    </Tooltip>
   );
 };

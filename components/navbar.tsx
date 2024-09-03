@@ -18,7 +18,7 @@ import {
   GithubIcon,
   MailIcon,
 } from "@/components/icons";
-import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
+import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Tooltip } from "@nextui-org/react";
 
 
 export const Navbar = () => {
@@ -52,13 +52,19 @@ export const Navbar = () => {
         justify="end"
       >
         <NavbarItem className="lg:flex gap-2">
-          <Link isExternal href={siteConfig.links.linkedin}>
-            <LinkedinIcon className="text-default-500" />
-          </Link>
-          <Link isExternal href={siteConfig.links.github}>
-            <GithubIcon className="text-default-500" />
-          </Link>
-          <ThemeSwitch />
+          <Tooltip showArrow={true} content="Click here to see my LinkedIn">
+            <Link isExternal href={siteConfig.links.linkedin}>
+              <LinkedinIcon className="text-default-500" />
+            </Link>
+          </Tooltip>
+          <Tooltip showArrow={true} content="Click here to see my GitHub">
+            <Link isExternal href={siteConfig.links.github}>
+              <GithubIcon className="text-default-500" />
+            </Link>
+          </Tooltip>
+          
+            <ThemeSwitch />
+          
         </NavbarItem>
 
         <NavbarItem className="lg:flex">
@@ -76,7 +82,7 @@ export const Navbar = () => {
                       Please send me an email at a time that works for you. I will do my best to get back to you within 24 to 48 hours.</h4>
                   </ModalBody>
                   <ModalFooter>
-                    
+
                   </ModalFooter>
                 </>
               )}
