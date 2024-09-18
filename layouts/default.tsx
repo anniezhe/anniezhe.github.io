@@ -18,7 +18,7 @@ export default function DefaultLayout({
         {children}
       </main>
       <footer className="w-full flex items-center justify-center py-3">
-      <span className="text-default-600">Made in NYC by yours truly! Powered by {" "}
+      <span className="text-default-600">Made in NYC by <Link href="https://github.com/anniezhe/anniezhe.github.io">yours truly</Link>! Powered by {" "}
        <Link href="https://nextui.org/"> NextUI</Link>.
       </span>
       </footer>
