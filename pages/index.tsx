@@ -59,7 +59,7 @@ export default function IndexPage() {
         </div>
         <div className="flex w-full flex-col">
           <Tabs aria-label="Options" size="lg" color="warning" variant="underlined" style={{fontWeight: "bold"}}>
-            <Tab key="mission" title="Mission">
+            <Tab key="mission" title="Goal">
               <Card style={{border: '1.5px solid #F09600'}}>
                 <CardBody>
                   <span>
