@@ -75,7 +75,7 @@ export default function IndexPage() {
                     - rejected medical treatments due to health insurance limits
                     <br />
                     <br />
-                    In my personal experience, I had to wait 3 weeks to get a simple, life-saving medical treatment, which was not acceptable. 
+                    In my personal experience, I had to wait 3 weeks to get permission for a simple, life-saving medical treatment, which was not acceptable. 
                     <br />
                     <br />
                     My goal is to be a part of the solution by doing three things:
