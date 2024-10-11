@@ -72,7 +72,7 @@ export default function IndexPage() {
                     <br />
                     - older generations retiring from the workforce with health problems
                     <br />
-                    - rejected medical claims in health insurance
+                    - rejected medical treatments due to health insurance limits
                     <br />
                     <br />
                     In my personal experience, I had to wait 3 weeks to get a simple, life-saving medical treatment, which was not acceptable. 
