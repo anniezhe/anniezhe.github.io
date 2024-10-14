@@ -63,10 +63,10 @@ export default function IndexPage() {
               <Card style={{border: '1.5px solid #F09600'}}>
                 <CardBody>
                   <span>
-                    I want to see a future where everyone in the United States has access to essential healthcare treatments in a timely manner.
+                    I want to improve access to good medical care at a reasonable cost in the United States.
                     <br />
                     <br />
-                    It is critical for the United States to have access life-saving healthcare treatments within the next decade. To name a few, there's an increasing amount of the following in recent years:
+                    It is critical for the United States to have access to good medical care within the next decade. To name a few, there's an increasing amount of the following in recent years:
                     <br />
                     - cancer diagnosis with younger generations
                     <br />
