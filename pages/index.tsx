@@ -124,7 +124,7 @@ export default function IndexPage() {
                     </TableHeader>
                     <TableBody>
                       <TableRow key="1">
-                        <TableCell><Link isExternal href="https://airtable.com/appnMzrdfiyuVpgYw/shr5KdFd7MiRkpTym">List of Important US Government Positions by Annie He</Link></TableCell>
+                        <TableCell><Link isExternal href="https://airtable.com/appnMzrdfiyuVpgYw/shr5KdFd7MiRkpTym">List of Important US Government Positions</Link></TableCell>
                         <TableCell>Annie He (that's me)</TableCell>
                       </TableRow>
                     </TableBody>
