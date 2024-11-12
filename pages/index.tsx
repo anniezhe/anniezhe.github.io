@@ -16,7 +16,7 @@ import CalendlyEmbed from "./../components/Calendly";
 
 export default function IndexPage() {
   const router = useRouter()
-  
+
   return (
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
@@ -60,9 +60,9 @@ export default function IndexPage() {
           <h1 className={title()}>More About Me</h1>
         </div>
         <div className="flex w-full flex-col">
-          <Tabs aria-label="Options" size="lg" color="warning" variant="underlined" style={{fontWeight: "bold"}}>
+          <Tabs aria-label="Options" size="lg" color="warning" variant="underlined" style={{ fontWeight: "bold" }}>
             <Tab key="mission" title="Goal">
-              <Card style={{border: '1.5px solid #F09600'}}>
+              <Card style={{ border: '1.5px solid #F09600' }}>
                 <CardBody>
                   <span>
                     I want to improve access to good medical care at a reasonable cost in the United States.
@@ -89,7 +89,7 @@ export default function IndexPage() {
               </Card>
             </Tab>
             <Tab key="background" title="Background" >
-              <Card style={{border: '1.5px solid #F09600'}}>
+              <Card style={{ border: '1.5px solid #F09600' }}>
                 <CardBody>
                   <span>
                     I have a year of work experience doing data analysis for New York City government, which churned out critical information for senior leadership across the division.
@@ -113,43 +113,43 @@ export default function IndexPage() {
               </Card>
             </Tab>
             <Tab key="projects" title="Materials + Projects">
-              <Card style={{border: '1.5px solid #F09600'}}>
+              <Card style={{ border: '1.5px solid #F09600' }}>
                 <CardBody>
-                <h4 className="text-large font-bold">Materials</h4>
-                <br />
-                
-    <br />
-    <Table isStriped aria-label="Projects Table">
+                  <h4 className="text-large font-bold">Materials</h4>
+                  <br />
+
+                  <br />
+                  <Table isStriped aria-label="Materials Table">
                     <TableHeader>
                       <TableColumn>Name</TableColumn>
                       <TableColumn>Author/Publisher</TableColumn>
                     </TableHeader>
                     <TableBody>
-                    <TableRow key="1">
+                      <TableRow key="1">
                         <TableCell><Link isExternal href="https://airtable.com/appnMzrdfiyuVpgYw/shr5KdFd7MiRkpTym">List of Important US Government Positions by Annie He</Link></TableCell>
                         <TableCell>Annie He (that's me)</TableCell>
                       </TableRow>
                     </TableBody>
-                    </Table>
-                <Divider />
-                <br />
-                <h4 className="text-large font-bold">Projects</h4>
-                <br />
+                  </Table>
+                  <Divider />
+                  <br />
+                  <h4 className="text-large font-bold">Projects</h4>
+                  <br />
                   <Table isStriped aria-label="Projects Table">
                     <TableHeader>
                       <TableColumn>Name</TableColumn>
                       <TableColumn>Completed Month and Year</TableColumn>
                     </TableHeader>
                     <TableBody>
-                    <TableRow key="1">
+                      <TableRow key="1">
                         <TableCell><Link isExternal href="https://medium.com/@anniezhe0/healthcare-is-my-problem-and-your-problem-86dbca22e565">Healthcare is My Problem and Your Problem</Link></TableCell>
                         <TableCell>November 2024</TableCell>
                       </TableRow>
-                    <TableRow key="2">
+                      <TableRow key="2">
                         <TableCell><Link isExternal href="https://medium.com/@anniezhe0/general-overview-of-the-us-healthcare-system-12628979bdf9">General Overview of the US Healthcare System</Link></TableCell>
                         <TableCell>October 2024</TableCell>
                       </TableRow>
-                    <TableRow key="3">
+                      <TableRow key="3">
                         <TableCell><Link isExternal href="https://github.com/anniezhe/cdc_botulism">Centers for Disease Control and Prevention (CDC)'s Botulism Report from 1899 to 2017</Link></TableCell>
                         <TableCell>September 2024</TableCell>
                       </TableRow>
@@ -167,7 +167,7 @@ export default function IndexPage() {
               </Card>
             </Tab>
             <Tab key="skills" title="Skills + Certificates">
-              <Card style={{border: '1.5px solid #F09600'}}>
+              <Card style={{ border: '1.5px solid #F09600' }}>
                 <CardBody>
                   <h4 className="text-large font-bold">Skills</h4>
                   <br />
@@ -253,12 +253,12 @@ export default function IndexPage() {
           <br />
           <br />
           <Card>
-          <CardBody>
-            <CalendlyEmbed url="https://calendly.com/anniezhe0/30min" />
-          </CardBody>
-        </Card>
+            <CardBody>
+              <CalendlyEmbed url="https://calendly.com/anniezhe0/30min" />
+            </CardBody>
+          </Card>
         </div>
-        
+
       </section>
     </DefaultLayout>
   );
