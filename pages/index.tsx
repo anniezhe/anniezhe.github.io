@@ -12,17 +12,11 @@ import GoogleAnalyticsCert from "../public/google-data-analytics-certificate.png
 import IBMDataAICert from "../public/ibm-machine-learning-specialist-associate.png";
 import { useRouter } from 'next/router';
 import CalendlyEmbed from "./../components/Calendly";
-import {Listbox, ListboxItem} from "@nextui-org/react";
-import {ListboxWrapper} from "../components/ListboxWrapper";
+
 
 export default function IndexPage() {
   const router = useRouter()
-  const items = [
-    {
-      label: "List of Important US Government Positions by Annie He",
-      href:"https://airtable.com/appnMzrdfiyuVpgYw/shr5KdFd7MiRkpTym",
-    }
-  ];
+  
   return (
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
@@ -123,25 +117,20 @@ export default function IndexPage() {
                 <CardBody>
                 <h4 className="text-large font-bold">Materials</h4>
                 <br />
-                <ListboxWrapper>
-      <Listbox
-        items={items}
-        aria-label="Dynamic Actions"
-        // onAction={(key) => alert(key)}
-      >
-        {(item) => (
-          <ListboxItem
-            key={item.label}
-            // color={item.key === "delete" ? "danger" : "default"}
-            // className={item.key === "delete" ? "text-danger" : ""}
-            href={item.href}
-          > 
-            {item.label}
-          </ListboxItem>
-        )}
-      </Listbox>
-    </ListboxWrapper>
+                
     <br />
+    <Table isStriped aria-label="Projects Table">
+                    <TableHeader>
+                      <TableColumn>Name</TableColumn>
+                      <TableColumn>Author/Publisher</TableColumn>
+                    </TableHeader>
+                    <TableBody>
+                    <TableRow key="1">
+                        <TableCell><Link isExternal href="https://airtable.com/appnMzrdfiyuVpgYw/shr5KdFd7MiRkpTym">List of Important US Government Positions by Annie He</Link></TableCell>
+                        <TableCell>Annie He (that's me)</TableCell>
+                      </TableRow>
+                    </TableBody>
+                    </Table>
                 <Divider />
                 <br />
                 <h4 className="text-large font-bold">Projects</h4>
