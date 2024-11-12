@@ -12,9 +12,17 @@ import GoogleAnalyticsCert from "../public/google-data-analytics-certificate.png
 import IBMDataAICert from "../public/ibm-machine-learning-specialist-associate.png";
 import { useRouter } from 'next/router';
 import CalendlyEmbed from "./../components/Calendly";
+import {Listbox, ListboxItem} from "@nextui-org/react";
+import {ListboxWrapper} from "../components/ListboxWrapper";
 
 export default function IndexPage() {
   const router = useRouter()
+  const items = [
+    {
+      label: "List of Important US Government Positions by Annie He",
+      href:"https://airtable.com/appnMzrdfiyuVpgYw/shr5KdFd7MiRkpTym",
+    }
+  ];
   return (
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
@@ -110,34 +118,58 @@ export default function IndexPage() {
                 </CardBody>
               </Card>
             </Tab>
-            <Tab key="projects" title="Projects">
+            <Tab key="projects" title="Materials + Projects">
               <Card style={{border: '1.5px solid #F09600'}}>
                 <CardBody>
+                <h4 className="text-large font-bold">Materials</h4>
+                <br />
+                <ListboxWrapper>
+      <Listbox
+        items={items}
+        aria-label="Dynamic Actions"
+        // onAction={(key) => alert(key)}
+      >
+        {(item) => (
+          <ListboxItem
+            key={item.label}
+            // color={item.key === "delete" ? "danger" : "default"}
+            // className={item.key === "delete" ? "text-danger" : ""}
+            href={item.href}
+          > 
+            {item.label}
+          </ListboxItem>
+        )}
+      </Listbox>
+    </ListboxWrapper>
+    <br />
+                <Divider />
+                <br />
+                <h4 className="text-large font-bold">Projects</h4>
+                <br />
                   <Table isStriped aria-label="Projects Table">
                     <TableHeader>
-                      <TableColumn>NAME</TableColumn>
-
+                      <TableColumn>Name</TableColumn>
                       <TableColumn>Completed Month and Year</TableColumn>
                     </TableHeader>
                     <TableBody>
                     <TableRow key="1">
-                        <TableCell><Link href="https://medium.com/@anniezhe0/healthcare-is-my-problem-and-your-problem-86dbca22e565">Healthcare is My Problem and Your Problem</Link></TableCell>
+                        <TableCell><Link isExternal href="https://medium.com/@anniezhe0/healthcare-is-my-problem-and-your-problem-86dbca22e565">Healthcare is My Problem and Your Problem</Link></TableCell>
                         <TableCell>November 2024</TableCell>
                       </TableRow>
                     <TableRow key="2">
-                        <TableCell><Link href="https://medium.com/@anniezhe0/general-overview-of-the-us-healthcare-system-12628979bdf9">General Overview of the US Healthcare System</Link></TableCell>
+                        <TableCell><Link isExternal href="https://medium.com/@anniezhe0/general-overview-of-the-us-healthcare-system-12628979bdf9">General Overview of the US Healthcare System</Link></TableCell>
                         <TableCell>October 2024</TableCell>
                       </TableRow>
                     <TableRow key="3">
-                        <TableCell><Link href="https://github.com/anniezhe/cdc_botulism">Centers for Disease Control and Prevention (CDC)'s Botulism Report from 1899 to 2017</Link></TableCell>
+                        <TableCell><Link isExternal href="https://github.com/anniezhe/cdc_botulism">Centers for Disease Control and Prevention (CDC)'s Botulism Report from 1899 to 2017</Link></TableCell>
                         <TableCell>September 2024</TableCell>
                       </TableRow>
                       <TableRow key="4">
-                        <TableCell><Link href="https://github.com/anniezhe/cfpb_complaint_dataset">2022-2023 Consumer Financial Protection Bureau (CFPB) Complaint Report</Link></TableCell>
+                        <TableCell><Link isExternal href="https://github.com/anniezhe/cfpb_complaint_dataset">2022-2023 Consumer Financial Protection Bureau (CFPB) Complaint Report</Link></TableCell>
                         <TableCell>December 2023</TableCell>
                       </TableRow>
                       <TableRow key="5">
-                        <TableCell><Link href="https://medium.com/@anniezhe0/using-random-forest-regression-model-on-the-mastercards-stock-data-itself-1a069ad9934a">Using Random Forest Regression Model on the Mastercard’s Stock Data Itself</Link></TableCell>
+                        <TableCell><Link isExternal href="https://medium.com/@anniezhe0/using-random-forest-regression-model-on-the-mastercards-stock-data-itself-1a069ad9934a">Using Random Forest Regression Model on the Mastercard’s Stock Data Itself</Link></TableCell>
                         <TableCell>April 2023</TableCell>
                       </TableRow>
                     </TableBody>
@@ -189,7 +221,7 @@ export default function IndexPage() {
                   <p>Click on any one of them below to see more information.</p>
                   <br />
                   <div className="gap-2 grid grid-cols-2 sm:grid-cols-4">
-                    <Link href="https://www.credly.com/badges/36373614-98a6-41e3-afe9-97cc427d2027/public_url">
+                    <Link isExternal href="https://www.credly.com/badges/36373614-98a6-41e3-afe9-97cc427d2027/public_url">
                       <Card className="py-4">
                         <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                           <p className="text-tiny uppercase font-bold">December 2023</p>
@@ -205,7 +237,7 @@ export default function IndexPage() {
                         </CardBody>
                       </Card>
                     </Link>
-                    <Link href="https://www.credly.com/badges/de0badae-7f24-4ca0-8e22-4f51271250c0/public_url">
+                    <Link isExternal href="https://www.credly.com/badges/de0badae-7f24-4ca0-8e22-4f51271250c0/public_url">
                       <Card className="py-4">
                         <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                           <p className="text-tiny uppercase font-bold">February 2024</p>
