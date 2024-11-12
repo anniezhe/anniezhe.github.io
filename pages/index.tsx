@@ -117,8 +117,6 @@ export default function IndexPage() {
                 <CardBody>
                   <h4 className="text-large font-bold">Materials</h4>
                   <br />
-
-                  <br />
                   <Table isStriped aria-label="Materials Table">
                     <TableHeader>
                       <TableColumn>Name</TableColumn>
@@ -131,6 +129,7 @@ export default function IndexPage() {
                       </TableRow>
                     </TableBody>
                   </Table>
+                  <br />
                   <Divider />
                   <br />
                   <h4 className="text-large font-bold">Projects</h4>
