@@ -50,7 +50,11 @@ export default function IndexPage() {
                   size="md"
                 >
                   LinkedIn
-                </Link>.
+                </Link>. I'm on <Link
+                isExternal
+                href={siteConfig.links.bluesky}
+                size="md"
+                >Bluesky</Link> connecting with folks who are interested in regulating healthcare and AI. 
               </span>
             </CardBody>
           </Card>
