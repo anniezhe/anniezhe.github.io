@@ -145,22 +145,26 @@ export default function IndexPage() {
                     </TableHeader>
                     <TableBody>
                       <TableRow key="1">
+                        <TableCell><Link isExternal href="https://inflation-health-dash-df2d2ac77f50.herokuapp.com/">Inflation and Healthcare Costs</Link></TableCell>
+                        <TableCell>December 2024</TableCell>
+                      </TableRow>
+                      <TableRow key="2">
                         <TableCell><Link isExternal href="https://medium.com/@anniezhe0/healthcare-is-my-problem-and-your-problem-86dbca22e565">Healthcare is My Problem and Your Problem</Link></TableCell>
                         <TableCell>November 2024</TableCell>
                       </TableRow>
-                      <TableRow key="2">
+                      <TableRow key="3">
                         <TableCell><Link isExternal href="https://medium.com/@anniezhe0/general-overview-of-the-us-healthcare-system-12628979bdf9">General Overview of the US Healthcare System</Link></TableCell>
                         <TableCell>October 2024</TableCell>
                       </TableRow>
-                      <TableRow key="3">
+                      <TableRow key="4">
                         <TableCell><Link isExternal href="https://github.com/anniezhe/cdc_botulism">Centers for Disease Control and Prevention (CDC)'s Botulism Report from 1899 to 2017</Link></TableCell>
                         <TableCell>September 2024</TableCell>
                       </TableRow>
-                      <TableRow key="4">
+                      <TableRow key="5">
                         <TableCell><Link isExternal href="https://github.com/anniezhe/cfpb_complaint_dataset">2022-2023 Consumer Financial Protection Bureau (CFPB) Complaint Report</Link></TableCell>
                         <TableCell>December 2023</TableCell>
                       </TableRow>
-                      <TableRow key="5">
+                      <TableRow key="6">
                         <TableCell><Link isExternal href="https://medium.com/@anniezhe0/using-random-forest-regression-model-on-the-mastercards-stock-data-itself-1a069ad9934a">Using Random Forest Regression Model on the Mastercard’s Stock Data Itself</Link></TableCell>
                         <TableCell>April 2023</TableCell>
                       </TableRow>
