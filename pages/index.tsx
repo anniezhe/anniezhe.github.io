@@ -44,7 +44,7 @@ export default function IndexPage() {
                   size="md"
                 >
                   Medium
-                </Link>. I like 
+                </Link>. I also like 
                 to write about anything related to tech, healthcare, and US policy on my <Link
                 isExternal
                 href={siteConfig.links.bluesky}
