@@ -66,5 +66,6 @@ export const siteConfig = {
     linkedin: "https://linkedin.com/in/anniezhe0",
     medium: "https://medium.com/@anniezhe0/about",
     bluesky: "https://bsky.app/profile/anniezhe.com",
+    substack: "https://anniezhe.substack.com"
   },
 };

@@ -44,17 +44,16 @@ export default function IndexPage() {
                   size="md"
                 >
                   Medium
-                </Link>. I also like to write shorter pieces on <Link
-                  isExternal
-                  href={siteConfig.links.linkedin}
-                  size="md"
-                >
-                  LinkedIn
-                </Link>. I'm on <Link
+                </Link>. I like 
+                to write about anything related to tech, healthcare, and US policy on my <Link
                 isExternal
                 href={siteConfig.links.bluesky}
                 size="md"
-                >Bluesky</Link> connecting with folks who are interested in regulating healthcare and AI. 
+                >Substack</Link>. I'm on <Link
+                isExternal
+                href={siteConfig.links.bluesky}
+                size="md"
+                >Bluesky</Link> connecting with folks who are interested in regulating healthcare and AI.
               </span>
             </CardBody>
           </Card>
