@@ -260,7 +260,7 @@ export default function IndexPage() {
           <br />
           <Card>
             <CardBody>
-              <CalendlyEmbed url="https://calendly.com/anniezhe0/30min" />
+              <CalendlyEmbed url="https://calendly.com/anniezhe0/15min" />
             </CardBody>
           </Card>
         </div>
