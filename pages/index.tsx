@@ -99,7 +99,7 @@ export default function IndexPage() {
                     I deploy a context-based approach to effectively analyze and extract information from the data.
                     <br />
                     <br />
-                    I graduated from CUNY John Jay on May 2023 with a bachelor's degree in Applied Mathematics with a concentration in Data Science and a minor in Computer Science. During my time as an undergrad, I participated 6 internships and 3 programs at various organizations from startups to corporations.
+                    I graduated from CUNY John Jay on June 2023 with a bachelor's degree in Applied Mathematics with a concentration in Data Science and a minor in Computer Science. During my time as an undergrad, I participated 6 internships and 3 programs at various organizations from startups to corporations.
                     <br />
                     <br />
                     During my free time, I build personal projects and publish all of them on my {" "}
