@@ -44,8 +44,7 @@ export default function IndexPage() {
                   size="md"
                 >
                   Medium
-                </Link>. I also like 
-                to write about anything related to tech, healthcare, and US policy on my <Link
+                </Link>. I also write about specific and important topics that affect tech, healthcare, and US policy on my <Link
                 isExternal
                 href={siteConfig.links.bluesky}
                 size="md"
