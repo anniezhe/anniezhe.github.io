@@ -46,7 +46,7 @@ export default function IndexPage() {
                   Medium
                 </Link>. I also write about specific and important topics that affect tech, healthcare, and US policy on my <Link
                 isExternal
-                href={siteConfig.links.bluesky}
+                href={siteConfig.links.substack}
                 size="md"
                 >Substack</Link>. I'm on <Link
                 isExternal
