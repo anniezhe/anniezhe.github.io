@@ -86,10 +86,7 @@ export default function IndexPage() {
                 <CardBody>
                   <span> 
 
-Since December 2024, I've written a newsletter called "All About Tech, Healthcare, & Policy" to write about why public health, especially in the United States, is important. I’m also studying US health policy at an MPH program based in Houston, TX. 
-                    <br />
-                    <br />
-                    I graduated from CUNY John Jay on June 2023 with a bachelor's degree in Applied Mathematics with a concentration in Data Science and a minor in Computer Science. During my time as an undergrad, I participated 6 internships and 3 programs at various organizations from startups to corporations.
+Since December 2024, I've written a newsletter called "All About Tech, Healthcare, & Policy" to write about why public health, especially in the United States, is important. Beginning in January 2026, I’ll study US health policy at an MPH program based in Houston, TX. 
                     <br />
                     <br />
                     During my free time, I build personal projects and publish all of them on my {" "}
