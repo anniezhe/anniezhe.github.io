@@ -29,7 +29,7 @@ export default function IndexPage() {
           &nbsp;
           <br />
           <h4 className={subtitle({ class: "mt-4" })}>
-            I collect, extract, and analyze information to learn and to present optimized and important documents.
+            I educate the public on why public health is important.
           </h4>
         </div>
 
