@@ -67,7 +67,7 @@ export default function IndexPage() {
               <Card style={{ border: '1.5px solid #F09600' }}>
                 <CardBody>
                   <span>
-                    I want to improve access to good medical care at a reasonable cost in the United States.
+                    I’m passionate about improving access to good medical care at a reasonable cost in the United States using population data (i.e. - pregnant people, income, healthcare coverage, etc.), documentation, tech tools, advocacy, and policy. 
                     <br />
                     <br />
                     It is critical for the United States to have access to good medical care within the next decade. To name a few, there's an increasing amount of the following in recent years:
@@ -77,15 +77,6 @@ export default function IndexPage() {
                     - older generations retiring from the workforce with health problems
                     <br />
                     - rejected medical treatments due to health insurance limits
-                    <br />
-                    <br />
-                    My goal is to be a part of the solution by doing three things:
-                    <br />
-                    - performing data analysis
-                    <br />
-                    - identifying and getting rid of what is not working
-                    <br />
-                    - identifying and keeping what is working and continue to build on it
                   </span>
                 </CardBody>
               </Card>
@@ -93,10 +84,9 @@ export default function IndexPage() {
             <Tab key="background" title="Background" >
               <Card style={{ border: '1.5px solid #F09600' }}>
                 <CardBody>
-                  <span>
-                    I have a year of work experience doing data analysis for New York City government, which churned out critical information for senior leadership across the division.
+                  <span> 
 
-                    I deploy a context-based approach to effectively analyze and extract information from the data.
+Since December 2024, I've written a newsletter called "All About Tech, Healthcare, & Policy" to write about why public health, especially in the United States, is important. I’m also studying US health policy at an MPH program based in Houston, TX. 
                     <br />
                     <br />
                     I graduated from CUNY John Jay on June 2023 with a bachelor's degree in Applied Mathematics with a concentration in Data Science and a minor in Computer Science. During my time as an undergrad, I participated 6 internships and 3 programs at various organizations from startups to corporations.
