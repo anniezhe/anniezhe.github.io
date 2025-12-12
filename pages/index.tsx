@@ -86,7 +86,7 @@ export default function IndexPage() {
                 <CardBody>
                   <span> 
 
-Since December 2024, I've written a newsletter called "All About Tech, Healthcare, & Policy" to write about why public health, especially in the United States, is important. Beginning in January 2026, I’ll study US health policy at an MPH program based in Houston, TX. 
+Since December 2024, I've written a newsletter called "All About Tech, Healthcare, & Policy" to write about why public health, especially in the United States, is important. Beginning in January 2026, I’ll study US health policy at an MPH program based in Texas. 
                     <br />
                     <br />
                     During my free time, I build personal projects and publish all of them on my {" "}
