@@ -63,24 +63,6 @@ export default function IndexPage() {
         </div>
         <div className="flex w-full flex-col">
           <Tabs aria-label="Options" size="lg" color="warning" variant="underlined" style={{ fontWeight: "bold" }}>
-            <Tab key="mission" title="Goal">
-              <Card style={{ border: '1.5px solid #F09600' }}>
-                <CardBody>
-                  <span>
-                    I’m passionate about improving access to good medical care at a reasonable cost in the United States using population data (i.e. - pregnant people, income, healthcare coverage, etc.), documentation, tech tools, advocacy, and policy. 
-                    <br />
-                    <br />
-                    It is critical for the United States to have access to good medical care within the next decade. To name a few, there's an increasing amount of the following in recent years:
-                    <br />
-                    - cancer diagnosis with younger generations
-                    <br />
-                    - older generations retiring from the workforce with health problems
-                    <br />
-                    - rejected medical treatments due to health insurance limits
-                  </span>
-                </CardBody>
-              </Card>
-            </Tab>
             <Tab key="background" title="Background" >
               <Card style={{ border: '1.5px solid #F09600' }}>
                 <CardBody>
