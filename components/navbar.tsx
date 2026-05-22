@@ -82,16 +82,6 @@ export const Navbar = () => {
                       Please send me an email at a time that works for you. I will do my best to get back to you within 24 to 48 hours.</h4>
                   </ModalBody>
                   <ModalFooter>
-                  <div className="mt-8 ">
-          <h1 className={title()}>Interested in connecting with me?</h1>
-          <br />
-          <br />
-          <Card>
-            <CardBody>
-              <CalendlyEmbed url="https://calendly.com/anniezhe0/15min" />
-            </CardBody>
-          </Card>
-        </div>
                   </ModalFooter>
                 </>
               )}
