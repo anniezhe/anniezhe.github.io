@@ -10,13 +10,14 @@ const nextConfig = {
     'react-aria'
   ],
 
-  // Injects Webpack overrides conditionally to prevent local Next.js schema validation warnings
-  ...(process.env.NODE_ENV === 'production' && {
+  ...(process.env.NETLIFY === 'true' && {
     webpack: (config, { isServer }) => {
       if (isServer) {
         config.externals = [
           ...(config.externals || []),
           '@react-aria/i18n',
+          '@react-aria/ssr',
+          '@react-aria/util',
           'react-aria'
         ];
       }
