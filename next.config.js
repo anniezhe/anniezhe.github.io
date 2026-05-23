@@ -12,17 +12,10 @@ const nextConfig = {
     'react-aria'
   ],
 
-  // 2. Clear out all old alias/experimental hacks and use this clean replacement rule
-  webpack: (config, { isServer }) => {
-    if (isServer) {
-      config.plugins.push(
-        new webpack.NormalModuleReplacementPlugin(
-          /@react-aria\/i18n\/dist\/import\.mjs$/,
-          require.resolve('@react-aria/i18n')
-        )
-      );
-    }
-    return config;
+  // 2. FOR NEXT.JS 14: This property must sit inside the experimental object block!
+  // This loose flag intercepts broken modules and auto-wraps them for the server runtime!
+  experimental: {
+    esmExternals: 'loose'
   }
 };
 
