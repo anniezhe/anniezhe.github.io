@@ -5,3 +5,11 @@ virtualStoreDir: "node_modules/.pnpm"
 # Whitelist 
 allowBuilds:
   sharp: true
+
+packages:
+  - "apps/*"
+  - "packages/*"
+
+# pnpm v11 Configuration Engine
+publicHoistPattern:
+  - "*"
