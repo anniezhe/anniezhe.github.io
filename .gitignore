@@ -1,42 +1,40 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
-/node_modules
-/.pnp
+# Dependencies
+node_modules/
+.pnp
 .pnp.js
 .pnpm-store/
+.pnpm/
 
-# testing
-/coverage
+# Testing
+coverage/
 
-# next.js
-/.next/
-/out/
+# Next.js & Production Builds
+.next/
+out/
+build/
+dist/
 
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-
-# Block ALL local environment files and secrets
+# Local Environment Secret Files
 .env
 .env*.local
-.env.development
-.env.production
+.env.development.local
+.env.production.local
 
-# vercel
+# Vercel
 .vercel
 
-# typescript
+# TypeScript
 *.tsbuildinfo
 next-env.d.ts
 
-# Block code editor caches
+# Code Editor Caches & OS Files
 .vscode/
 .idea/
+.DS_Store
+*.pem
 
-# Block the literal %USERPROFILE% folder created on the E drive
-%USERPROFILE%/
+# Block the literal broken Windows path 
+# (Note: Remove this line completely if the literal folder "%USERPROFILE%" does not exist in your project root)
+\%USERPROFILE\%/
