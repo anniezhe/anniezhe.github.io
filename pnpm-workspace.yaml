@@ -1,0 +1,7 @@
+# Target folder paths on your external E: drive
+storeDir: "E:\\.pnpm-store"
+virtualStoreDir: "node_modules/.pnpm"
+
+# Whitelist 
+allowBuilds:
+  sharp: true

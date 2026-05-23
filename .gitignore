@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+.pnpm-store/
 
 # testing
 /coverage
@@ -18,14 +19,13 @@
 # misc
 .DS_Store
 *.pem
-/.vscode
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
-# local env files
+
+# Block ALL local environment files and secrets
+.env
 .env*.local
+.env.development
+.env.production
 
 # vercel
 .vercel
@@ -33,3 +33,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Block code editor caches
+.vscode/
+.idea/
+
+# Block the literal %USERPROFILE% folder created on the E drive
+"%USERPROFILE%/"
