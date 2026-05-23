@@ -8,6 +8,17 @@ const nextConfig = {
     '@react-aria/i18n',
     'react-aria'
   ],
+  // 2. Add the Webpack override block to fix the useMessageFormatter error
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.externals = [
+        ...(config.externals || []),
+        '@react-aria/i18n',
+        'react-aria'
+      ];
+    }
+    return config;
+  }
 }
 
 module.exports = nextConfig
