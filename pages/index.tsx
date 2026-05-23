@@ -45,13 +45,13 @@ export default function IndexPage() {
                 >
                   Medium
                 </Link>. I also write about why public health is important and why voting matters in public health at least 1x/month on my <Link
-                isExternal
-                href={siteConfig.links.substack}
-                size="md"
+                  isExternal
+                  href={siteConfig.links.substack}
+                  size="md"
                 >Substack</Link>. I'm on <Link
-                isExternal
-                href={siteConfig.links.bluesky}
-                size="md"
+                  isExternal
+                  href={siteConfig.links.bluesky}
+                  size="md"
                 >Bluesky</Link> connecting with folks who are interested in regulating healthcare and AI.
               </span>
             </CardBody>
@@ -66,9 +66,10 @@ export default function IndexPage() {
             <Tab key="background" title="Background" >
               <Card style={{ border: '1.5px solid #F09600' }}>
                 <CardBody>
-                  <span> 
-
-Since December 2024, I've written a Substack newsletter to write about why public health, especially in the United States, is important. Beginning in January 2026, I’ll study US health policy at an MPH program based in Texas. 
+                  <span>
+                    I’ve grown deeply frustrated with the public’s negative attitude toward public health and voting,
+                    which led me to start a Substack newsletter in December 2024. Immersing myself in these issues made me realize I wanted a career in public health policy, which prompted me to apply for an MPH program by mid-2025.
+                    Beginning in 2026, I started my program in Texas, where I am studying U.S. health policy and researching how geographic location impacts community health.
                     <br />
                     <br />
                     During my free time, I build personal projects and publish all of them on my {" "}
@@ -222,17 +223,6 @@ Since December 2024, I've written a Substack newsletter to write about why publi
             </Tab>
           </Tabs>
         </div>
-        <div className="mt-8 ">
-          <h1 className={title()}>Interested in connecting with me?</h1>
-          <br />
-          <br />
-          <Card>
-            <CardBody>
-              <CalendlyEmbed url="https://calendly.com/anniezhe0/15min" />
-            </CardBody>
-          </Card>
-        </div>
-
       </section>
     </DefaultLayout>
   );

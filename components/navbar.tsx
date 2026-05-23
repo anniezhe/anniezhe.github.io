@@ -19,8 +19,7 @@ import {
   MailIcon,
 } from "@/components/icons";
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Tooltip } from "@nextui-org/react";
-
-
+import CalendlyEmbed from "./../components/Calendly";
 export const Navbar = () => {
 
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -62,9 +61,9 @@ export const Navbar = () => {
               <GithubIcon className="text-default-500" />
             </Link>
           </Tooltip>
-          
-            <ThemeSwitch />
-          
+
+          <ThemeSwitch />
+
         </NavbarItem>
 
         <NavbarItem className="lg:flex">
@@ -76,12 +75,13 @@ export const Navbar = () => {
             <ModalContent>
               {(onClose) => (
                 <>
-                  <ModalHeader className="flex flex-col">Here's my contact info</ModalHeader>
+                  <ModalHeader className="flex">Here's my contact info</ModalHeader>
                   <ModalBody>
                     <h4>If you have any questions or concerns, my email address is anniezhe0@gmail.com. I am based in New York City, so my timezone, Eastern Time, may be different from yours and that's okay!
                       Please send me an email at a time that works for you. I will do my best to get back to you within 24 to 48 hours.</h4>
                   </ModalBody>
                   <ModalFooter>
+                    <CalendlyEmbed url="https://calendly.com/anniezhe0/15min" />
                   </ModalFooter>
                 </>
               )}
@@ -89,36 +89,6 @@ export const Navbar = () => {
           </Modal>
         </NavbarItem>
       </NavbarContent>
-
-      {/* <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        <Link isExternal href={siteConfig.links.github}>
-          <GithubIcon className="text-default-500" />
-        </Link>
-        <ThemeSwitch />
-        <NavbarMenuToggle />
-      </NavbarContent> */}
-
-      {/* <NavbarMenu>
-        <div className="mx-4 mt-2 flex flex-col gap-2">
-          {siteConfig.navItems.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`}>
-              <Link
-                color={
-                  index === 2
-                    ? "primary"
-                    : index === siteConfig.navItems.length - 1
-                      ? "danger"
-                      : "foreground"
-                }
-                href="#"
-                size="lg"
-              >
-                {item.label}
-              </Link>
-            </NavbarMenuItem>
-          ))}
-        </div>
-      </NavbarMenu> */}
     </NextUINavbar>
   );
 };
