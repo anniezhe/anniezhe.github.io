@@ -3,8 +3,7 @@ import { title, subtitle } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
 import { Tabs, Tab, Card, CardBody, CardHeader, Image, 
   Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, Divider, Link } from "@nextui-org/react";
-import GoogleAnalyticsCert from "../public/google-data-analytics-certificate.png";
-import IBMDataAICert from "../public/ibm-machine-learning-specialist-associate.png";
+
 import { useRouter } from 'next/router';
 
 
@@ -164,11 +163,11 @@ export default function IndexPage() {
                         <TableCell>Jupyter Notebook</TableCell>
                       </TableRow>
                       <TableRow key="5">
-                        <TableCell>{ }</TableCell>
+                        <TableCell>{" "}</TableCell>
                         <TableCell>Tableau</TableCell>
                       </TableRow>
                       <TableRow key="6">
-                        <TableCell>{ }</TableCell>
+                        <TableCell>{" "}</TableCell>
                         <TableCell>Microsoft Excel</TableCell>
                       </TableRow>
                     </TableBody>
@@ -190,7 +189,7 @@ export default function IndexPage() {
                           <Image
                             alt="Card background"
                             className="object-cover rounded-xl"
-                            src={GoogleAnalyticsCert.src}
+                            src="/google-data-analytics-certificate.png"
                             width={270}
                           />
                         </CardBody>
@@ -206,7 +205,7 @@ export default function IndexPage() {
                           <Image
                             alt="Card background"
                             className="object-cover rounded-xl"
-                            src={IBMDataAICert.src}
+                            src="/ibm-machine-learning-specialist-associate.png"
                             width={270}
                           />
                         </CardBody>
