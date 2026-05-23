@@ -4,9 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-patchedDependencies:
-  '@react-aria/i18n@3.13.0': c5bbf58d71105761e1d7e1a4a1e77fd125d7fd2d0ccfcdb4d3f0a36ec040c3d7
-
 importers:
 
   .:
@@ -5435,7 +5432,7 @@ snapshots:
 
   '@react-aria/breadcrumbs@3.5.19(@react-spectrum/provider@3.11.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@react-aria/i18n': 3.13.0(patch_hash=c5bbf58d71105761e1d7e1a4a1e77fd125d7fd2d0ccfcdb4d3f0a36ec040c3d7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@react-aria/i18n': 3.13.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-aria/link': 3.9.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-aria/utils': 3.26.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-types/breadcrumbs': 3.7.9(@react-spectrum/provider@3.11.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -5609,7 +5606,7 @@ snapshots:
 
   '@react-aria/focus@3.19.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@react-aria/interactions': 3.28.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@react-aria/interactions': 3.22.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-aria/utils': 3.26.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-types/shared': 3.34.0(react@18.3.1)
       '@swc/helpers': 0.5.21
@@ -5666,7 +5663,7 @@ snapshots:
 
   '@react-aria/i18n@3.12.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@internationalized/date': 3.6.0
+      '@internationalized/date': 3.12.1
       '@internationalized/message': 3.1.9
       '@internationalized/number': 3.6.6
       '@internationalized/string': 3.2.8
@@ -5678,7 +5675,7 @@ snapshots:
     transitivePeerDependencies:
       - react-dom
 
-  '@react-aria/i18n@3.13.0(patch_hash=c5bbf58d71105761e1d7e1a4a1e77fd125d7fd2d0ccfcdb4d3f0a36ec040c3d7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@react-aria/i18n@3.13.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@internationalized/date': 3.12.1
       '@internationalized/message': 3.1.9
@@ -5702,7 +5699,7 @@ snapshots:
     dependencies:
       '@react-aria/ssr': 3.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-aria/utils': 3.26.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@react-types/shared': 3.26.0(react@18.3.1)
+      '@react-types/shared': 3.34.0(react@18.3.1)
       '@swc/helpers': 0.5.21
       react: 18.3.1
     transitivePeerDependencies:
@@ -5812,7 +5809,7 @@ snapshots:
   '@react-aria/menu@3.16.0(@react-spectrum/provider@3.11.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@react-aria/focus': 3.19.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@react-aria/i18n': 3.13.0(patch_hash=c5bbf58d71105761e1d7e1a4a1e77fd125d7fd2d0ccfcdb4d3f0a36ec040c3d7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@react-aria/i18n': 3.13.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-aria/interactions': 3.22.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-aria/overlays': 3.32.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-aria/selection': 3.28.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -5840,7 +5837,7 @@ snapshots:
   '@react-aria/overlays@3.22.1(@react-spectrum/provider@3.11.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@react-aria/focus': 3.17.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@react-aria/i18n': 3.13.0(patch_hash=c5bbf58d71105761e1d7e1a4a1e77fd125d7fd2d0ccfcdb4d3f0a36ec040c3d7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@react-aria/i18n': 3.13.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-aria/interactions': 3.21.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-aria/ssr': 3.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-aria/utils': 3.24.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -5858,14 +5855,14 @@ snapshots:
   '@react-aria/overlays@3.24.0(@react-spectrum/provider@3.11.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@react-aria/focus': 3.19.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@react-aria/i18n': 3.13.0(patch_hash=c5bbf58d71105761e1d7e1a4a1e77fd125d7fd2d0ccfcdb4d3f0a36ec040c3d7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@react-aria/i18n': 3.13.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-aria/interactions': 3.22.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-aria/ssr': 3.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-aria/utils': 3.26.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-aria/visually-hidden': 3.8.18(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@react-stately/overlays': 3.7.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@react-stately/overlays': 3.6.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-types/button': 3.16.0(@react-spectrum/provider@3.11.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@react-types/overlays': 3.10.0(@react-spectrum/provider@3.11.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@react-types/overlays': 3.8.11(react@18.3.1)
       '@react-types/shared': 3.34.0(react@18.3.1)
       '@swc/helpers': 0.5.21
       react: 18.3.1
@@ -5896,7 +5893,7 @@ snapshots:
     dependencies:
       '@react-aria/focus': 3.19.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-aria/form': 3.2.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@react-aria/i18n': 3.13.0(patch_hash=c5bbf58d71105761e1d7e1a4a1e77fd125d7fd2d0ccfcdb4d3f0a36ec040c3d7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@react-aria/i18n': 3.13.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-aria/interactions': 3.22.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-aria/label': 3.8.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-aria/utils': 3.26.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -6009,7 +6006,7 @@ snapshots:
     dependencies:
       '@react-aria/focus': 3.19.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-aria/grid': 3.15.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@react-aria/i18n': 3.13.0(patch_hash=c5bbf58d71105761e1d7e1a4a1e77fd125d7fd2d0ccfcdb4d3f0a36ec040c3d7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@react-aria/i18n': 3.13.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-aria/interactions': 3.22.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-aria/live-announcer': 3.5.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-aria/utils': 3.26.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -6030,7 +6027,7 @@ snapshots:
   '@react-aria/tabs@3.9.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@react-aria/focus': 3.19.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@react-aria/i18n': 3.13.0(patch_hash=c5bbf58d71105761e1d7e1a4a1e77fd125d7fd2d0ccfcdb4d3f0a36ec040c3d7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@react-aria/i18n': 3.13.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-aria/selection': 3.28.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-aria/utils': 3.26.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-stately/tabs': 3.7.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -6087,7 +6084,7 @@ snapshots:
   '@react-aria/toolbar@3.0.0-beta.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@react-aria/focus': 3.19.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@react-aria/i18n': 3.13.0(patch_hash=c5bbf58d71105761e1d7e1a4a1e77fd125d7fd2d0ccfcdb4d3f0a36ec040c3d7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@react-aria/i18n': 3.13.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-aria/utils': 3.26.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@react-types/shared': 3.26.0(react@18.3.1)
       '@swc/helpers': 0.5.21
