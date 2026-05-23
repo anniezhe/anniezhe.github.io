@@ -8,7 +8,10 @@ const nextConfig = {
     '@nextui-org/react',
     '@react-aria/i18n',
     'react-aria'
-  ]
+  ],
+  experimental: {
+    esmExternals: 'loose'
+  }
 
 };
 

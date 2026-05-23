@@ -9,3 +9,15 @@ index 5616b78dfc7cc8d9e30fbfa8c1eef95e25197b2c..e5b9704c44d2e8715d065f46147f445f
  import {I18nProvider as $1697a7ad3db7b79f$re_export$I18nProvider, useLocale as $1697a7ad3db7b79f$re_export$useLocale, isRTL as $1697a7ad3db7b79f$re_export$isRTL} from "react-aria/I18nProvider";
  import {useLocalizedStringFormatter as $1697a7ad3db7b79f$re_export$useLocalizedStringFormatter, useLocalizedStringDictionary as $1697a7ad3db7b79f$re_export$useLocalizedStringDictionary} from "react-aria/useLocalizedStringFormatter";
  import {useListFormatter as $1697a7ad3db7b79f$re_export$useListFormatter} from "react-aria/useListFormatter";
+diff --git a/package.json b/package.json
+index 59a7be18f8e9673f5e7bc04dd7920ce94668f6f6..c8945d044ab230e0447c61d181a1515c3e866bc6 100644
+--- a/package.json
++++ b/package.json
+@@ -3,6 +3,7 @@
+   "version": "3.13.0",
+   "description": "Spectrum UI components in React",
+   "license": "Apache-2.0",
++  "type": "module",
+   "main": "dist/main.js",
+   "module": "dist/module.js",
+   "exports": {
