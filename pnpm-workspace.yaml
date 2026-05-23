@@ -13,3 +13,6 @@ packages:
 # pnpm v11 Configuration Engine
 publicHoistPattern:
   - "*"
+
+patchedDependencies:
+  '@react-aria/i18n@3.13.0': patches/@react-aria__i18n@3.13.0.patch
