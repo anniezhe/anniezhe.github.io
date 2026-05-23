@@ -28,14 +28,14 @@ pnpm create next-app my-hero-app -e https://github.com/heroui-inc/next-pages-tem
 
 ### IMPORTANT
 
-You must do the following if you're using `pnpm`.
+You must do the following if you're using `pnpm` on an external drive.
 
 1. Go into your new folder by using this command: `cd my-hero-app`
 2. Create a new file called 'pnpm-workspace.yaml' file.
 3. Paste the following code below.
 
 ```yaml
-storeDir: "E:\\.pnpm-store"
+storeDir: "{name of external drive such as E: or D:}\\.pnpm-store"
 virtualStoreDir: "node_modules/.pnpm"
 allowBuilds:
   - sharp
