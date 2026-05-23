@@ -1,17 +1,12 @@
-import { Link } from "@nextui-org/link";
-// import { Code } from "@nextui-org/code";
-// import { button as buttonStyles } from "@nextui-org/theme";
-import { Divider } from "@nextui-org/react";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
-// import { GithubIcon } from "@/components/icons";
 import DefaultLayout from "@/layouts/default";
-import { Tabs, Tab, Card, CardBody, CardHeader, Image } from "@nextui-org/react";
-import { Table, TableHeader, TableColumn, TableBody, TableRow, TableCell } from "@nextui-org/react";
+import { Tabs, Tab, Card, CardBody, CardHeader, Image, 
+  Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, Divider, Link } from "@nextui-org/react";
 import GoogleAnalyticsCert from "../public/google-data-analytics-certificate.png";
 import IBMDataAICert from "../public/ibm-machine-learning-specialist-associate.png";
 import { useRouter } from 'next/router';
-import CalendlyEmbed from "./../components/Calendly";
+
 
 
 export default function IndexPage() {
