@@ -38,3 +38,6 @@ next-env.d.ts
 # Block the literal broken Windows path 
 # (Note: Remove this line completely if the literal folder "%USERPROFILE%" does not exist in your project root)
 \%USERPROFILE\%/
+
+.env.local
+.env*.local
