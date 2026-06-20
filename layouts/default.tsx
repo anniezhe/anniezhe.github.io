@@ -2,6 +2,8 @@ import { Link } from "@nextui-org/link";
 import { Head } from "./head";
 import { Navbar } from "@/components/navbar";
 import { GoogleAnalytics } from '@next/third-parties/google';
+import getConfig from 'next/config';
+const { publicRuntimeConfig } = getConfig();
 export default function DefaultLayout({
   children,
 }: {
@@ -11,7 +13,7 @@ export default function DefaultLayout({
     <div className="relative flex flex-col h-screen">
       <Head />
       <Navbar />
-      <GoogleAnalytics gaId="G-MHBR3D7FM7" />
+      <GoogleAnalytics gaId={publicRuntimeConfig.GA_ID} />
       <main className="container mx-auto max-w-7xl px-6 flex-grow pt-16">
         {children}
       </main>
