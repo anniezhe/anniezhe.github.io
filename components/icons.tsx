@@ -91,7 +91,7 @@ export const SunFilledIcon = ({
 );
 
 export const LinkedinIcon = ({
-  size = 24,
+  size = 28,
   width,
   height,
   ...props

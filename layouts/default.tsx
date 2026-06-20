@@ -1,7 +1,5 @@
 import { Link } from "@nextui-org/link";
-
 import { Head } from "./head";
-
 import { Navbar } from "@/components/navbar";
 import { GoogleAnalytics } from '@next/third-parties/google';
 export default function DefaultLayout({

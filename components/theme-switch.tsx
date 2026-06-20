@@ -1,90 +1,27 @@
-import { FC, useState, useEffect } from "react";
-import { VisuallyHidden } from "@react-aria/visually-hidden";
-import { SwitchProps, useSwitch } from "@nextui-org/switch";
+"use client";
+
 import { useTheme } from "next-themes";
-import clsx from "clsx";
-import { Tooltip } from "@nextui-org/react";
+import { useEffect, useState } from "react";
 
-import { SunFilledIcon, MoonFilledIcon } from "@/components/icons";
+export default function ThemeSwitch() {
+  const { theme, setTheme, systemTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
-export interface ThemeSwitchProps {
-  className?: string;
-  classNames?: SwitchProps["classNames"];
-}
+  // Avoid hydration mismatch
+  useEffect(() => setMounted(true), []);
 
-export const ThemeSwitch: FC<ThemeSwitchProps> = ({
-  className,
-  classNames,
-}) => {
-  const [isMounted, setIsMounted] = useState(false);
+  if (!mounted) return null;
 
-  const { theme, setTheme } = useTheme();
-
-  const onChange = () => {
-    theme === "light" ? setTheme("dark") : setTheme("light");
-  };
-
-  const {
-    Component,
-    slots,
-    isSelected,
-    getBaseProps,
-    getInputProps,
-    getWrapperProps,
-  } = useSwitch({
-    isSelected: theme === "light",
-    onChange,
-  });
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, [isMounted]);
-
-  // Prevent Hydration Mismatch
-  if (!isMounted) return <div className="w-6 h-6" />;
+  const currentTheme = theme === "system" ? systemTheme : theme;
 
   return (
-    <Tooltip showArrow={true} content="Click here to change my website's background color.">
-    <Component
-      {...getBaseProps({
-        className: clsx(
-          "px-px transition-opacity hover:opacity-80 cursor-pointer",
-          className,
-          classNames?.base,
-        ),
-      })}
+    <button
+      onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
+      className="px-3 py-1 rounded bg-gray-200 text-gray-900
+        dark:bg-gray-800 dark:text-gray-100
+        hover:bg-gray-300 dark:hover:bg-gray-700"
     >
-      <VisuallyHidden>
-        <input {...getInputProps()} />
-      </VisuallyHidden>
-      <div
-        {...getWrapperProps()}
-        className={slots.wrapper({
-          class: clsx(
-            [
-              "w-auto h-auto",
-              "bg-transparent",
-              "rounded-lg",
-              "flex items-center justify-center",
-              "group-data-[selected=true]:bg-transparent",
-              "!text-default-500",
-              "pt-px",
-              "px-0",
-              "mx-0",
-            ],
-            classNames?.wrapper,
-          ),
-        })}
-      >
-        
-          {isSelected ? (
-            <MoonFilledIcon size={22} />
-          ) : (
-            <SunFilledIcon size={22} />
-          )}
-        
-    </div>
-    </Component >
-    </Tooltip>
+      {currentTheme === "dark" ? "🌙 Dark" : "☀️ Light"}
+    </button>
   );
-};
+}
