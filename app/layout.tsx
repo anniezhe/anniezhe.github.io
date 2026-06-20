@@ -7,8 +7,8 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
       <body>
         <Providers>
           {children}
-          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!} />
         </Providers>
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!} />
       </body>
     </html>
   );
