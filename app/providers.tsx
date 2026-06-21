@@ -1,29 +1,37 @@
 "use client";
-import * as React from "react";
-import { NextUIProvider } from '@nextui-org/react';
-import { ThemeProvider as NextThemesProvider } from "next-themes";
-import { usePathname } from 'next/navigation';
-import { useEffect } from 'react';
-import { pageview } from '@/lib/gtag';
-export function Providers({ children }: { children: React.ReactNode }) {
-  const pathname = usePathname();
 
+import * as React from "react";
+import { ThemeProvider } from "next-themes";
+import { NextUIProvider } from "@nextui-org/react";
+import { usePathname } from 'next/navigation'; // Updated hook for the App Router
+import { useEffect, useState } from 'react';
+import { pageview } from '@/lib/gtag';
+
+export default function Providers({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname();
+  const [mounted, setMounted] = useState(false);
+
+  // Trigger page tracking whenever the App Router changes paths
   useEffect(() => {
     if (pathname) {
       pageview(pathname);
     }
   }, [pathname]);
+
+  // Prevent server-side context hydration mismatches
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return <>{children}</>;
+  }
+
   return (
     <NextUIProvider>
-      <NextThemesProvider
-        attribute="class" // adds class="light" or "dark" to <html>
-        defaultTheme="system" // use system preference by default
-        enableSystem={true}   // allow automatic switching
-      >
+      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
         {children}
-      </NextThemesProvider>
+      </ThemeProvider>
     </NextUIProvider>
-
-  )
+  );
 }
-

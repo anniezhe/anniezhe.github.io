@@ -55,6 +55,12 @@ pnpm install
 pnpm dev
 ```
 
+### Run the production build check
+
+```bash
+pnpm build
+```
+
 ## License
 
 Licensed under the [MIT license](https://github.com/nextui-org/next-pages-template/blob/main/LICENSE).

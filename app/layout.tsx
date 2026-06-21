@@ -1,22 +1,30 @@
-import {Providers} from "./providers";
+import type { Metadata } from "next";
+import Providers from "./providers"; // Your client-side context file
 import { GoogleAnalytics } from '@next/third-parties/google';
+import '@/styles/globals.css'; // Global CSS must be imported here
 
-export const metadata = {
+// Bypasses the old custom <Head> elements inside _document.tsx
+export const metadata: Metadata = {
   title: "Annie He's Website",
-  description: "Welcome to my website!",
+  description: "Public health and healthcare regulation insights.",
 };
 
-export default function RootLayout({children}: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en" className='dark'>
+    <html lang="en" suppressHydrationWarning>
       <body>
+        {/* Google Analytics mounts seamlessly here */}
+        <GoogleAnalytics gaId="G-LLWQ3HNLG9" />
+        
+        {/* All global providers wrap the inner child layout tree */}
         <Providers>
           {children}
         </Providers>
-        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!} />
       </body>
     </html>
   );
 }
-
-

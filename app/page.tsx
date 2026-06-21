@@ -1,16 +1,13 @@
+"use client";
+
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
 import { Tabs, Tab, Card, CardBody, CardHeader, Image, 
   Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, Divider, Link } from "@nextui-org/react";
 
-import { useRouter } from 'next/router';
-
-
 
 export default function IndexPage() {
-  const router = useRouter()
-
   return (
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">

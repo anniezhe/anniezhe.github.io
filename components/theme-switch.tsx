@@ -2,6 +2,7 @@
 
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import { Button } from "@nextui-org/react"; // 👈 Use the native framework component
 
 export default function ThemeSwitch() {
   const { theme, setTheme, systemTheme } = useTheme();
@@ -15,13 +16,15 @@ export default function ThemeSwitch() {
   const currentTheme = theme === "system" ? systemTheme : theme;
 
   return (
-    <button
-      onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
-      className="px-3 py-1 rounded bg-gray-200 text-gray-900
-        dark:bg-gray-800 dark:text-gray-100
-        hover:bg-gray-300 dark:hover:bg-gray-700"
+    <Button
+      isIconOnly
+      variant="flat"
+      color="default"
+      onPress={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
+      aria-label="Toggle dark mode"
+      className="text-lg"
     >
-      {currentTheme === "dark" ? "🌙 Dark" : "☀️ Light"}
-    </button>
+      {currentTheme === "dark" ? "🌙" : "☀️"}
+    </Button>
   );
 }
