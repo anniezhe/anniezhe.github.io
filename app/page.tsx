@@ -31,6 +31,7 @@ export default function IndexPage() {
             <CardBody>
               <span>
                 Are you working in AI or public health -- or both? I'd love to connect with you!
+                I'm interested in speaking with people who are involved in health communication, non-medical determinants of health, civic tech, or AI for public good.
               </span>
             </CardBody>
           </Card>
