@@ -51,11 +51,10 @@ export const Navbar = () => {
         <NavbarItem className="lg:flex">
           <Button 
             onPress={onOpen}
-            className="text-sm font-normal text-default-600 bg-default-100"
-            startContent={<MailIcon className="text-danger" />}
+            className="text-sm font-bold text-default-600 bg-default-100 text-danger"
             variant="flat"
           >
-            Contact Me
+            Let's Connect
           </Button>
 
           <Modal isOpen={isOpen} scrollBehavior="inside" onOpenChange={onOpenChange}>
