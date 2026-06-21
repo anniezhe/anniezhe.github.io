@@ -3,8 +3,10 @@
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
-import { Tabs, Tab, Card, CardBody, CardHeader, Image, 
-  Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, Divider, Link } from "@nextui-org/react";
+import {
+  Tabs, Tab, Card, CardBody, CardHeader, Image,
+  Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, Divider, Link
+} from "@nextui-org/react";
 
 
 export default function IndexPage() {
@@ -28,22 +30,7 @@ export default function IndexPage() {
           <Card>
             <CardBody>
               <span>
-                I like to write essays about my work and personal experiences on {" "}
-                <Link
-                  isExternal
-                  href={siteConfig.links.medium}
-                  size="md"
-                >
-                  Medium
-                </Link>. I also write about why public health is important and why voting matters in public health at least 1x/month on my <Link
-                  isExternal
-                  href={siteConfig.links.substack}
-                  size="md"
-                >Substack</Link>. I'm on <Link
-                  isExternal
-                  href={siteConfig.links.bluesky}
-                  size="md"
-                >Bluesky</Link> connecting with folks who are interested in regulating healthcare and AI.
+                Are you working in AI or public health -- or both? I'd love to connect with you!
               </span>
             </CardBody>
           </Card>
@@ -71,6 +58,22 @@ export default function IndexPage() {
                     >
                       GitHub
                     </Link>.
+                    I like to write essays about my work and personal experiences on {" "}
+                    <Link
+                      isExternal
+                      href={siteConfig.links.medium}
+                      size="md"
+                    >
+                      Medium
+                    </Link>. I also write about why public health is important and why voting matters in public health at least 1x/month on my <Link
+                      isExternal
+                      href={siteConfig.links.substack}
+                      size="md"
+                    >Substack</Link>. I'm on <Link
+                      isExternal
+                      href={siteConfig.links.bluesky}
+                      size="md"
+                    >Bluesky</Link> connecting with folks who are interested in regulating healthcare and AI.
                   </span>
                 </CardBody>
               </Card>
