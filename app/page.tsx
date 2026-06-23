@@ -66,7 +66,7 @@ export default function IndexPage() {
                       size="md"
                     >
                       Medium
-                    </Link>. I also write about why public health is important and why voting matters in public health at least 1x/month on my <Link
+                    </Link>. I still write about why public health is important and why voting matters in public health at least 1x/month on my <Link
                       isExternal
                       href={siteConfig.links.substack}
                       size="md"
