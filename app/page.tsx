@@ -48,7 +48,7 @@ export default function IndexPage() {
                   <span>
                     I’ve grown deeply frustrated with the public’s negative attitude toward public health and voting,
                     which led me to start a Substack newsletter in December 2024. Immersing myself in these issues made me realize I wanted a career in public health policy, which prompted me to apply for an MPH program by mid-2025.
-                    Beginning in 2026, I started my program in Texas, where I am studying U.S. health policy and researching how geographic location impacts community health.
+                    Beginning in 2026, I started my program in Texas, where I am studying U.S. health policy and researching how spatial, civic, and informational systems impact community health.
                     <br />
                     <br />
                     During my free time, I build personal projects and publish all of them on my {" "}
