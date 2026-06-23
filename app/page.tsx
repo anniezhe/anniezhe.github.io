@@ -22,7 +22,7 @@ export default function IndexPage() {
           &nbsp;
           <br />
           <h4 className={subtitle({ class: "mt-4" })}>
-            I educate the public on why public health is important.
+            I study how geographic location and jurisdiction shape community health, and I communicate how civic participation, including voting, influences public health outcomes.
           </h4>
         </div>
 
