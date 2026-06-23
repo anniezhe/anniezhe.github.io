@@ -22,7 +22,7 @@ export default function IndexPage() {
           &nbsp;
           <br />
           <h4 className={subtitle({ class: "mt-4" })}>
-            I study how geographic location and jurisdiction shape community health, and I communicate how civic participation, including voting, influences public health outcomes.
+            I study how geographic, jurisdictional, civic, and informational systems shape community health.
           </h4>
         </div>
 
