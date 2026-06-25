@@ -24,7 +24,7 @@ export default function IndexPage() {
           <br />
           <h4 className={subtitle({ class: "mt-4" })}>
             I study how geographic, jurisdictional, civic, and informational systems shape community health.
-            My work explores how policy, technology, and informational systems can improve population health outcomes.
+            My work explores how policy, technology, and informational systems can help improve population health outcomes.
           </h4>
         </div>
 
