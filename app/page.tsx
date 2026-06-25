@@ -8,6 +8,7 @@ import {
   Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, Divider, Link
 } from "@nextui-org/react";
 
+import SubstackFeed from '@/components/SubstackFeed';
 
 export default function IndexPage() {
   return (
@@ -27,7 +28,7 @@ export default function IndexPage() {
         </div>
 
         <div className="mt-4">
-          <Card>
+          <Card style={{ border: '1.5px solid #F09600' }}>
             <CardBody>
               <span>
                 Are you working in AI or public health -- or both? I'd love to connect with you!
@@ -47,7 +48,10 @@ export default function IndexPage() {
                 <CardBody>
                   <span>
                     I’ve grown deeply frustrated with the public’s negative attitude toward public health and voting,
-                    which led me to start a Substack newsletter in December 2024. Immersing myself in these issues made me realize I wanted a career in public health policy, which prompted me to apply for an MPH program by mid-2025.
+                    which led me to start a Substack newsletter in December 2024.
+                    Immersing myself in these issues made me realize I wanted a career in public health policy, which prompted me to apply for an MPH program by mid-2025.
+                    <br />
+                    <br />
                     Beginning in 2026, I started my program in Texas, where I am studying U.S. health policy and researching how spatial, civic, and informational systems impact community health.
                     <br />
                     <br />
@@ -70,11 +74,38 @@ export default function IndexPage() {
                       isExternal
                       href={siteConfig.links.substack}
                       size="md"
-                    >Substack</Link>. I'm on <Link
+                    >Substack</Link>. Please feel free to subscribe below! I'm on <Link
                       isExternal
                       href={siteConfig.links.bluesky}
                       size="md"
                     >Bluesky</Link> connecting with folks who are interested in regulating healthcare and AI.
+
+                    <div className="w-full mx-auto my-6">
+                      <SubstackFeed />
+                      <br />
+                      <br />
+                      <div className="block dark:hidden rounded-xl overflow-hidden bg-[#fafafa] p-4 border border-gray-200 shadow-lg">
+                        <iframe
+                          src="https://anniezhe.substack.com/embed"
+                          width="100%"
+                          height="320"
+                          style={{ border: 0, background: '#fafafa' }}
+                          title="Substack Subscription Form Light"
+                        />
+                      </div>
+
+                      {/* 2. DARK MODE WIDGET */}
+                      {/* Replaced shadow-sm with shadow-xl and added a darker shadow tint so it stands out on dark mode */}
+                      <div className="hidden dark:block rounded-xl overflow-hidden bg-[#1a1a1a] p-4 border border-zinc-800 shadow-xl shadow-zinc-950/40">
+                        <iframe
+                          src="https://anniezhe.substack.com/embed"
+                          width="100%"
+                          height="320"
+                          style={{ border: 0, background: '#1a1a1a' }}
+                          title="Substack Subscription Form Dark"
+                        />
+                      </div>
+                    </div>
                   </span>
                 </CardBody>
               </Card>
