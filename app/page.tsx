@@ -88,7 +88,7 @@ export default function IndexPage() {
                         <iframe
                           src="https://anniezhe.substack.com/embed"
                           width="100%"
-                          height="320"
+                          height="600vh"
                           style={{ border: 0, background: '#fafafa' }}
                           title="Substack Subscription Form Light"
                         />
@@ -100,7 +100,7 @@ export default function IndexPage() {
                         <iframe
                           src="https://anniezhe.substack.com/embed"
                           width="100%"
-                          height="320"
+                          height="600vh"
                           style={{ border: 0, background: '#1a1a1a' }}
                           title="Substack Subscription Form Dark"
                         />
