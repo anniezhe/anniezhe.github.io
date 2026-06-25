@@ -44,7 +44,7 @@ export default function IndexPage() {
         </div>
         <div className="flex w-full flex-col">
           <Tabs aria-label="Options" size="lg" color="warning" variant="underlined" style={{ fontWeight: "bold" }}>
-            <Tab key="background" title="Background" >
+            <Tab key="background" title="Start here!" >
               <Card style={{ border: '1.5px solid #F09600' }}>
                 <CardBody>
                   <span>
