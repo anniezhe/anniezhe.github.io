@@ -23,7 +23,7 @@ export default function IndexPage() {
           &nbsp;
           <br />
           <h4 className={subtitle({ class: "mt-4" })}>
-            I study how geographic, jurisdictional, civic, and informational systems shape community health.
+            I study how geographic, jurisdictional, civic, and communication systems shape community health.
             My work explores how policy, technology, and informational systems can help improve population health outcomes.
           </h4>
         </div>
@@ -53,7 +53,7 @@ export default function IndexPage() {
                     Immersing myself in these issues made me realize I wanted a career in public health policy, which prompted me to apply for an MPH program by mid-2025.
                     <br />
                     <br />
-                    Beginning in 2026, I started my program in Texas, where I am studying U.S. health policy and researching how spatial, civic, and informational systems impact community health.
+                    Beginning in 2026, I started my program in Texas, where I am studying U.S. health policy and researching how spatial, civic, and communication systems impact community health.
                     <br />
                     <br />
                     During my free time, I build personal projects and publish all of them on my {" "}
