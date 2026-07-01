@@ -32,7 +32,12 @@ export default function IndexPage() {
           <Card style={{ border: '1.5px solid #F09600' }}>
             <CardBody>
               <span>
-                Are you working in AI or public health -- or both? I'd love to connect with you! There's a portal called "Let's Connect" at the top of this page where you can see my contact information and schedule a 15-min meeting with me.
+                Are you working in AI or public health -- or both? 
+                <br/>
+                <br/>
+                I'd love to connect with you! Let's meet at a portal called "Let's Connect" at the top of this page. The portal has my contact information and allows you to schedule a 15-min meeting with me.
+                <br/>
+                <br/>
                 I'm interested in speaking with people who are involved in health communication, law, non-medical determinants of health, civic tech, or AI for public good.
               </span>
             </CardBody>
