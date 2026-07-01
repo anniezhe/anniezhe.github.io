@@ -23,8 +23,8 @@ export default function IndexPage() {
           &nbsp;
           <br />
           <h4 className={subtitle({ class: "mt-4" })}>
-            I study how geographic, jurisdictional, civic, and communication systems shape community health.
-            My work explores how policy, technology, and communication systems can help improve population health outcomes.
+            I study how spatial, civic, and communication systems shape community health.
+            My work explores how these systems together can help improve population health outcomes.
           </h4>
         </div>
 
@@ -32,7 +32,7 @@ export default function IndexPage() {
           <Card style={{ border: '1.5px solid #F09600' }}>
             <CardBody>
               <span>
-                Are you working in AI or public health -- or both? I'd love to connect with you!
+                Are you working in AI or public health -- or both? I'd love to connect with you! There's a portal called "Let's Connect" at the top of this page where you can see my contact information and schedule a 15-min meeting with me.
                 I'm interested in speaking with people who are involved in health communication, law, non-medical determinants of health, civic tech, or AI for public good.
               </span>
             </CardBody>
