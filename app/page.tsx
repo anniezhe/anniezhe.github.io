@@ -23,7 +23,7 @@ export default function IndexPage() {
           &nbsp;
           <br />
           <h4 className={subtitle({ class: "mt-4" })}>
-            I study how spatial, civic, and communication systems shape community health.
+            I'm an MPH student that studies how spatial, civic, and communication systems shape community health in the United States.
             My work explores how these systems together can help improve population health outcomes.
           </h4>
         </div>
