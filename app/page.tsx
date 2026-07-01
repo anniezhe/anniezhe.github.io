@@ -35,7 +35,7 @@ export default function IndexPage() {
                 Are you working in AI or public health -- or both? 
                 <br/>
                 <br/>
-                I'd love to connect with you! Let's meet at a portal called "Let's Connect" at the top of this page. The portal has my contact information and allows you to schedule a 15-min meeting with me.
+                If so, I'd love to connect with you! Let's meet at a portal called "Let's Connect" at the top of this page. The portal has my contact information and allows you to schedule a 15-min meeting with me.
                 <br/>
                 <br/>
                 I'm interested in speaking with people who are involved in health communication, law, non-medical determinants of health, civic tech, or AI for public good.
