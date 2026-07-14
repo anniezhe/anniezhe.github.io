@@ -6,7 +6,7 @@ import '@/styles/globals.css'; // Global CSS must be imported here
 // Bypasses the old custom <Head> elements inside _document.tsx
 export const metadata: Metadata = {
   title: "Annie He's Website",
-  description: "Public health and healthcare regulation insights.",
+  description: "Public health researcher and advocate.",
 };
 
 export default function RootLayout({
