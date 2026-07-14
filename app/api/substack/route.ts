@@ -2,6 +2,9 @@
 import { NextResponse } from 'next/server';
 import Parser from 'rss-parser';
 
+// Automatically revalidates the cache every 10 minutes
+export const revalidate = 600;
+
 export async function GET() {
   const parser = new Parser();
   try {
