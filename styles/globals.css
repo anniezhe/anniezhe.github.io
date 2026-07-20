@@ -24,7 +24,7 @@
   position: absolute;
   inset: 0;
   border-radius: 12px; /* Matches NextUI default button curvature */
-  background-color: rgba(243, 18, 96, 0.4); /* NextUI Danger Red Color */
+  background-color: rgb(255, 0, 89); /* NextUI Danger Red Color */
   z-index: 0;
   pointer-events: none;
   animation: sonar-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
