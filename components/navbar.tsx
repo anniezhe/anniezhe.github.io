@@ -15,14 +15,14 @@ import ThemeSwitch from "@/components/theme-switch";
 import { LinkedinIcon, MailIcon } from "@/components/icons";
 
 // FIX: Change package source from @heroui/react to @nextui-org/react
-import { 
-  Modal, 
-  ModalContent, 
-  ModalHeader, 
-  ModalBody, 
-  ModalFooter, 
-  Button, 
-  useDisclosure 
+import {
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  Button,
+  useDisclosure
 } from "@nextui-org/react";
 
 import CalendlyEmbed from "./../components/Calendly";
@@ -31,7 +31,7 @@ export const Navbar = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   return (
-    <NextUINavbar maxWidth="xl" isBordered>
+    <NextUINavbar maxWidth="xl" isBordered position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
@@ -49,13 +49,17 @@ export const Navbar = () => {
         </NavbarItem>
 
         <NavbarItem className="lg:flex">
-          <Button 
-            onPress={onOpen}
-            className="text-sm font-bold text-default-600 bg-default-100 text-danger"
-            variant="flat"
-          >
-            Let's Connect
-          </Button>
+          <div className="pulsate-wrapper">
+            <Button
+              onPress={onOpen}
+              className="relative z-10 text-sm font-bold text-default-600 bg-default-100 text-danger"
+              variant="flat"
+
+            >
+              Let's Connect
+            </Button>
+          </div>
+
 
           <Modal isOpen={isOpen} scrollBehavior="inside" onOpenChange={onOpenChange}>
             <ModalContent>
@@ -66,18 +70,18 @@ export const Navbar = () => {
                     {/* FIX: Swapped wrapping <p> out for clean semantic <div> layout containers to fix hydration trees */}
                     <div className="text-sm leading-6">
                       <p>
-                        If you have any questions or concerns, my email address is anniezhe0@gmail.com. 
+                        If you have any questions or concerns, my email address is anniezhe0@gmail.com.
                         I am based in New York City, so my timezone, Eastern Time, may be different from yours and that's okay!
                         Please send me an email at a time that works for you. I will do my best to get back to you within 24 to 48 hours.
                       </p>
-                      
+
                       <div className="mt-4">
                         <p className="font-medium mb-1">Follow me on social media!</p>
                         <Link isExternal href={siteConfig.links.linkedin}>
                           <LinkedinIcon className="text-default-600" />
                         </Link>
                       </div>
-                      
+
                       <div className="mt-6">
                         <CalendlyEmbed url="https://calendly.com/anniezhe0/15min" />
                       </div>
