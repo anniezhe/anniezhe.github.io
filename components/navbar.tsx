@@ -26,10 +26,11 @@ import {
 } from "@nextui-org/react";
 
 import CalendlyEmbed from "./../components/Calendly";
+import { useState } from "react";
 
 export const Navbar = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
-
+  const [isStopped, setIsStopped] = useState<boolean>(false);
   return (
     <NextUINavbar maxWidth="xl" isBordered position="sticky" isBlurred className="bg-background/70 backdrop-blur-md">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
@@ -49,9 +50,12 @@ export const Navbar = () => {
         </NavbarItem>
 
         <NavbarItem className="lg:flex">
-          <div className="pulsate-wrapper">
+          <div className={`pulsate-wrapper after:hover:animate-none ${isStopped ? "after:animate-none" : ""}`}>
             <Button
-              onPress={onOpen}
+              onPress={() => {
+                onOpen();
+                setIsStopped(true); // Stops the animation on click
+              }}
               className="relative z-10 text-sm font-bold text-orange-400 bg-default-100"
               variant="flat"
 

@@ -27,6 +27,6 @@
   background-color: rgb(255, 106, 0); /* NextUI Danger Red Color */
   z-index: 0;
   pointer-events: none;
-  animation: sonar-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  animation: sonar-pulse 5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
