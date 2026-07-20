@@ -52,7 +52,7 @@ export const Navbar = () => {
           <div className="pulsate-wrapper">
             <Button
               onPress={onOpen}
-              className="relative z-10 text-sm font-bold text-default-600 bg-default-100 text-danger"
+              className="relative z-10 text-sm font-bold text-orange-400 bg-default-100"
               variant="flat"
 
             >
