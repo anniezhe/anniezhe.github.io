@@ -41,7 +41,8 @@ export default function DefaultLayout({
         */}
         <div className="safe-bottom safe-x mx-auto max-w-[90%] max-w-7xl px-8 md:px-6 py-4 text-center md:text-left text-medium text-default-600 leading-relaxed">
            &copy; {currentYear}. Made in NYC by <Link href="https://github.com">yours truly</Link>! Powered by {" "}
-          <Link href="https://nextui.org">NextUI</Link>. {" "}
+          <Link href="https://nextui.org">NextUI</Link> and 
+          <Link href="https://nextjs.org/">Next.js</Link>. {" "}
           <Link href="/privacy">
             Click me to see privacy policy
           </Link>. {" "}
