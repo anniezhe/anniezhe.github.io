@@ -21,7 +21,7 @@ import {
   Button,
   useDisclosure
 } from "@nextui-org/react";
-import { faGithub, faBluesky, faSquareLinkedin, faSubstack, faMedium } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faBluesky, faSquareLinkedin, faSubstack, faMedium, faMastodon } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CalendlyEmbed from "./../components/Calendly";
@@ -97,6 +97,9 @@ export const Navbar = () => {
                         </Link>
                         <Link isExternal href={siteConfig.links.medium}>
                           <FontAwesomeIcon icon={faMedium} size="2x" />
+                        </Link>
+                        <Link isExternal href={siteConfig.links.mastodon}>
+                          <FontAwesomeIcon icon={faMastodon} size="2x" />
                         </Link>
                       </div>
                       <div className="mt-4">
