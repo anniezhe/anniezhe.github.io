@@ -6,7 +6,7 @@ My website is built using a provided template from Next.js 14 (pages directory) 
 
 [Try the template on CodeSandbox](https://githubbox.com/nextui-org/next-pages-template)
 
->Note: Since Next.js 14, the pages router is recommend migrating to the [new App Router](https://nextjs.org/docs/app) to leverage React's latest features
+>Note: Since Next.js 14, it's recommended to migrate from the pages router to the [new App Router](https://nextjs.org/docs/app) in order to use React's latest features
 >
 >Read more: [Pages Router](https://nextjs.org/docs/pages)
 
