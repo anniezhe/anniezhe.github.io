@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
-import Providers from "./providers"; // Your client-side context file
+import Providers from "./providers";
 import { GoogleAnalytics } from '@next/third-parties/google';
-import '@/styles/globals.css'; // Global CSS must be imported here
+import '@/styles/globals.css';
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
 
-// Bypasses the old custom <Head> elements inside _document.tsx
+config.autoAddCss = false;
+
 export const metadata: Metadata = {
   title: "Annie He's Website",
   description: "Public health researcher and advocate.",
@@ -14,13 +17,19 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // Grab the measurement ID string from your environment variables
+  const gaId = process.env.NEXT_PUBLIC_GA_ID;
+
   return (
     <html lang="en" suppressHydrationWarning>
+      {/* 
+        Removed the hardcoded head script because your lib/gtag.ts 
+        initConsent() function handles default denial states on mount!
+      */}
       <body>
-        {/* Google Analytics mounts seamlessly here */}
-        <GoogleAnalytics gaId="G-LLWQ3HNLG9" />
+        {/* Pass the dynamic variable name directly without quotes */}
+        {gaId && <GoogleAnalytics gaId={gaId} />}
         
-        {/* All global providers wrap the inner child layout tree */}
         <Providers>
           {children}
         </Providers>

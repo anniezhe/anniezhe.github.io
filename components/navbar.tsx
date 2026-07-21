@@ -12,9 +12,6 @@ import annieLogo from "../public/annieLogo.png";
 import NextLink from "next/link";
 import { siteConfig } from "@/config/site";
 import ThemeSwitch from "@/components/theme-switch";
-import { LinkedinIcon, MailIcon } from "@/components/icons";
-
-// FIX: Change package source from @heroui/react to @nextui-org/react
 import {
   Modal,
   ModalContent,
@@ -24,9 +21,11 @@ import {
   Button,
   useDisclosure
 } from "@nextui-org/react";
-
+import { faGithub, faBluesky, faSquareLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CalendlyEmbed from "./../components/Calendly";
 import { useState } from "react";
+import { NativeShareButton, EmailShareButton } from "./share";
 
 export const Navbar = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -71,7 +70,6 @@ export const Navbar = () => {
                 <>
                   <ModalHeader className="flex">Here's my contact info</ModalHeader>
                   <ModalBody>
-                    {/* FIX: Swapped wrapping <p> out for clean semantic <div> layout containers to fix hydration trees */}
                     <div className="text-sm leading-6">
                       <p>
                         If you have any questions or concerns, my email address is anniezhe0@gmail.com.
@@ -82,8 +80,20 @@ export const Navbar = () => {
                       <div className="mt-4">
                         <p className="font-medium mb-1">Follow me on social media!</p>
                         <Link isExternal href={siteConfig.links.linkedin}>
-                          <LinkedinIcon className="text-default-600" />
+                          <FontAwesomeIcon icon={faSquareLinkedin} size="2x" />
                         </Link>
+                        <Link isExternal href={siteConfig.links.github}>
+                          <FontAwesomeIcon icon={faGithub} size="2x" />
+                        </Link>
+                        <Link isExternal href={siteConfig.links.bluesky}>
+                          <FontAwesomeIcon icon={faBluesky} size="2x" />
+                        </Link>
+                      </div>
+                      <div className="mt-4">
+                        <p className="font-medium mb-1">You can also share this page!</p>
+                        <NativeShareButton />
+                        {" "}
+                        <EmailShareButton />
                       </div>
 
                       <div className="mt-6">

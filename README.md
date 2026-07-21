@@ -2,6 +2,8 @@
 
 My website is built using a provided template from Next.js 14 (pages directory) and NextUI (v2).
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/82bad03d-9310-46d5-9dfd-40ecfdb828cf/deploy-status)](https://app.netlify.com/projects/anniezhe/deploys)
+
 [Try the template on CodeSandbox](https://githubbox.com/nextui-org/next-pages-template)
 
 >Note: Since Next.js 14, the pages router is recommend migrating to the [new App Router](https://nextjs.org/docs/app) to leverage React's latest features
@@ -17,6 +19,10 @@ My website is built using a provided template from Next.js 14 (pages directory) 
 - [TypeScript](https://www.typescriptlang.org)
 - [Framer Motion](https://www.framer.com/motion)
 - [next-themes](https://github.com/pacocoursey/next-themes)
+
+## Deploy
+
+- [Netlify](https://www.netlify.com/)
 
 ## How to Use
 

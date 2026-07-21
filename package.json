@@ -1,7 +1,7 @@
 {
 	"name": "next-pages-template",
 	"version": "1.0.0",
-	"packageManager": "pnpm@11.9.0",
+	"packageManager": "pnpm@11.15.1",
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
@@ -10,6 +10,11 @@
 		"lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix"
 	},
 	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^7.3.1",
+		"@fortawesome/free-brands-svg-icons": "^7.3.1",
+		"@fortawesome/free-regular-svg-icons": "^7.3.1",
+		"@fortawesome/free-solid-svg-icons": "^7.3.1",
+		"@fortawesome/react-fontawesome": "^3.5.0",
 		"@next/third-parties": "^14.2.7",
 		"@nextui-org/button": "2.0.37",
 		"@nextui-org/code": "2.0.32",
@@ -32,7 +37,8 @@
 		"react": "18.3.1",
 		"react-dom": "18.3.1",
 		"rss-parser": "^3.13.0",
-		"sharp": "^0.33.5"
+		"sharp": "^0.33.5",
+		"vanilla-cookieconsent": "3.1.0"
 	},
 	"devDependencies": {
 		"@types/node": "20.5.7",
