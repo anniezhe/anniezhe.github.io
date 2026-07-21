@@ -4,9 +4,11 @@
 export const initConsent = () => {
   if (typeof window === 'undefined') return;
   
-  window.dataLayer = window.dataLayer || [];
+  const win = window as any;
+  win.dataLayer = win.dataLayer || [];
+  
   function gtag(...args: any[]) {
-    window.dataLayer.push(args);
+    win.dataLayer.push(args);
   }
   
   // Set default state to denied until user chooses
@@ -19,9 +21,11 @@ export const initConsent = () => {
 export const updateConsent = (granted: boolean) => {
   if (typeof window === 'undefined') return;
   
-  window.dataLayer = window.dataLayer || [];
+  const win = window as any;
+  win.dataLayer = win.dataLayer || [];
+  
   function gtag(...args: any[]) {
-    window.dataLayer.push(args);
+    win.dataLayer.push(args);
   }
 
   gtag('consent', 'update', {
@@ -31,8 +35,12 @@ export const updateConsent = (granted: boolean) => {
 
 // Your existing pageview function
 export const pageview = (url: string) => {
-  if (typeof window === 'undefined' || !window.gtag) return;
-  window.gtag('config', 'G-LLWQ3HNLG9', {
+  if (typeof window === 'undefined') return;
+  
+  const win = window as any;
+  if (!win.gtag) return;
+  
+  win.gtag('config', 'G-LLWQ3HNLG9', {
     page_path: url,
   });
 };
