@@ -1,6 +1,6 @@
 # Annie He's Portfolio Website
 
-My website is built using a provided template from Next.js 14 (pages directory) and NextUI (v2).
+My website is built using a provided template from Next.js 14 (app router directory) and NextUI (v2).
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/82bad03d-9310-46d5-9dfd-40ecfdb828cf/deploy-status)](https://app.netlify.com/projects/anniezhe/deploys)
 
