@@ -54,7 +54,7 @@ export default function PrivacyPolicyPage() {
               anonymous user behavior. This includes data such as:
             </p>
             <ul className="list-disc pl-5 mt-2 space-y-1">
-              <li>The pages you visit on our site</li>
+              <li>The pages you visit on my site</li>
               <li>The time and date of your visit</li>
               <li>The type of device, browser, and operating system you use</li>
               <li>The website that referred you to me</li>
@@ -83,7 +83,7 @@ export default function PrivacyPolicyPage() {
             <p className="leading-relaxed">
               Cookies are small text files placed on your device. I use them to
               make Google Analytics work. You have the choice to accept or decline
-              these tracking cookies using our cookie consent banner. If you choose
+              these tracking cookies using my cookie consent banner. If you choose
               to decline, no Google Analytics cookies will be placed on your machine.
             </p>
           </section>
