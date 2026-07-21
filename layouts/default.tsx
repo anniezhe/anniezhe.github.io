@@ -39,13 +39,13 @@ export default function DefaultLayout({
           Fixed: Added safe-bottom, safe-x, padding, and centered text 
           so it looks balanced and remains fully tappable on mobile screens
         */}
-        <div className="safe-bottom safe-x mx-auto max-w-[90%] max-w-7xl px-8 md:px-6 py-4 text-center md:text-left text-small text-default-600 leading-relaxed">
-           &copy; {currentYear}. Made in NYC by <Link href="https://github.com" size="sm">yours truly</Link>! Powered by {" "}
-          <Link href="https://nextui.org" size="sm">NextUI</Link>. {" "}
-          <Link href="/privacy" size="sm">
+        <div className="safe-bottom safe-x mx-auto max-w-[90%] max-w-7xl px-8 md:px-6 py-4 text-center md:text-left text-medium text-default-600 leading-relaxed">
+           &copy; {currentYear}. Made in NYC by <Link href="https://github.com">yours truly</Link>! Powered by {" "}
+          <Link href="https://nextui.org">NextUI</Link>. {" "}
+          <Link href="/privacy">
             Click me to see privacy policy
           </Link>. {" "}
-          <Link href="#" onClick={handleShowBanner} size="sm">
+          <Link href="#" onClick={handleShowBanner}>
             Click me to view cookie settings
           </Link>.
         </div>
