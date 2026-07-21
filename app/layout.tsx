@@ -10,6 +10,7 @@ config.autoAddCss = false;
 
 // 1. Handles titles, descriptions, and OpenGraph for mobile sharing
 export const metadata: Metadata = {
+  metadataBase: new URL('https://anniezhe.com'),
   title: siteConfig.name,
   description: siteConfig.description,
   openGraph: {
@@ -20,7 +21,8 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" }, // Standard browser tab icon
-      { url: "/AH_192x192.png", type: "image/png", sizes: "192x192" } // For Android Chrome home screen shortcuts
+      { url: "/AH_192x192.png", type: "image/png", sizes: "192x192" }, // For Android Chrome home screen shortcuts
+      { url: "/AH_512x512.png", type: "image/png", sizes: "512x512" } // Android splash screen
     ],
     apple: "/AH_180x180.png", // Recommended for iOS home screen
   },
@@ -41,7 +43,11 @@ export const viewport: Viewport = {
   maximumScale: 1,
   userScalable: false,
   viewportFit: "cover", // Essential for full-screen notch devices
-  themeColor: "#ffffff", // Colors the mobile browser address bar
+  // Dynamically colors the browser chrome border based on dark/light settings
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#000000" }, // Matches dark mode themes
+  ], // Colors the mobile browser address bar
 };
 
 export default function RootLayout({
