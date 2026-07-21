@@ -27,10 +27,10 @@ My website is built using a provided template from Next.js 14 (pages directory) 
 
 ## How to Use
 
-To create a new project based on this template using `create-next-app`, run the following command:
+To create a new project based on this template using `create next-app`, run the following command:
 
 ```bash
-pnpm create next-app my-hero-app -e https://github.com/heroui-inc/next-pages-template --use-pnpm
+pnpm create next-app
 ```
 
 ### IMPORTANT
