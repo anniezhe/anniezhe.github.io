@@ -21,7 +21,8 @@ import {
   Button,
   useDisclosure
 } from "@nextui-org/react";
-import { faGithub, faBluesky, faSquareLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faBluesky, faSquareLinkedin, faSubstack, faMedium } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CalendlyEmbed from "./../components/Calendly";
 import { useState } from "react";
@@ -75,8 +76,11 @@ export const Navbar = () => {
                         If you have any questions or concerns, my email address is anniezhe0@gmail.com.
                         I am based in New York City, so my timezone, Eastern Time, may be different from yours and that's okay!
                         Please send me an email at a time that works for you. I will do my best to get back to you within 24 to 48 hours.
+                        
                       </p>
-
+                      <Link isExternal href={siteConfig.links.contact}>
+                          <FontAwesomeIcon icon={faEnvelope} size="2x" />
+                        </Link>
                       <div className="mt-4">
                         <p className="font-medium mb-1">Follow me on social media!</p>
                         <Link isExternal href={siteConfig.links.linkedin}>
@@ -87,6 +91,12 @@ export const Navbar = () => {
                         </Link>
                         <Link isExternal href={siteConfig.links.bluesky}>
                           <FontAwesomeIcon icon={faBluesky} size="2x" />
+                        </Link>
+                        <Link isExternal href={siteConfig.links.substack}>
+                          <FontAwesomeIcon icon={faSubstack} size="2x" />
+                        </Link>
+                        <Link isExternal href={siteConfig.links.medium}>
+                          <FontAwesomeIcon icon={faMedium} size="2x" />
                         </Link>
                       </div>
                       <div className="mt-4">

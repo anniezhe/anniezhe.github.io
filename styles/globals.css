@@ -23,10 +23,26 @@
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 12px; /* Matches NextUI default button curvature */
-  background-color: rgb(255, 106, 0); /* NextUI Danger Red Color */
+  border-radius: 12px; 
+  background-color: rgb(255, 106, 0); 
   z-index: 0;
   pointer-events: none;
   animation: sonar-pulse 5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
+body {
+  min-height: 100vh;
+}
 
+
+.safe-top {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.safe-x {
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
+}
