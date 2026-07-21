@@ -139,7 +139,7 @@ export default function PrivacyPolicyPage() {
           {/* Section 8 */}
           <section>
             <h2 className="text-xl md:text-2xl font-semibold mb-3 text-card-foreground">
-              8. Contact Us
+              8. Contact Me
             </h2>
             <p className="leading-relaxed">
               If you have any questions or concerns regarding this Privacy Policy or
