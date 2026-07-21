@@ -37,7 +37,7 @@ pnpm create next-app
 
 You must do the following if you're using `pnpm` on an external drive.
 
-1. Go into your new folder by using this command: `cd my-hero-app`
+1. Go into your new folder by using the `cd` command.
 2. Create a new file called 'pnpm-workspace.yaml' file.
 3. Paste the following code below.
 
@@ -50,7 +50,7 @@ allowBuilds:
 
 ### Install dependencies
 
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `pnpm`:
+You can use one of them `npm`, `yarn`, `pnpm`, or `bun`. Example using `pnpm`:
 
 ```bash
 pnpm add
