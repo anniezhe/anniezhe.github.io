@@ -9,11 +9,6 @@ import {
 } from "@nextui-org/react";
 import SubstackFeed from '@/components/SubstackFeed';
 
-export const metadata = {
-  title: "Home Page",
-  description: "Website's home page.",
-};
-
 export default function IndexPage() {
   return (
     <DefaultLayout>
