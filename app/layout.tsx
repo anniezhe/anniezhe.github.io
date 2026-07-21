@@ -10,7 +10,7 @@ config.autoAddCss = false;
 
 // 1. Handles titles, descriptions, and OpenGraph for mobile sharing
 export const metadata: Metadata = {
-  metadataBase: new URL('https://anniezhe.com'),
+  metadataBase: new URL('https://www.anniezhe.com'),
   title: siteConfig.name,
   description: siteConfig.description,
   openGraph: {
