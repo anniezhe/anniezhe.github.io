@@ -27,6 +27,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CalendlyEmbed from "./../components/Calendly";
 import { useState } from "react";
 import { NativeShareButton, EmailShareButton } from "./share";
+export const metadata = {
+  title: "Navbar",
+  description: "Website's navbar menu.",
+};
 
 export const Navbar = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();

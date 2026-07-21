@@ -7,8 +7,12 @@ import {
   Tabs, Tab, Card, CardBody, CardHeader, Image,
   Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, Divider, Link
 } from "@nextui-org/react";
-
 import SubstackFeed from '@/components/SubstackFeed';
+
+export const metadata = {
+  title: "Home Page",
+  description: "Website's home page.",
+};
 
 export default function IndexPage() {
   return (
