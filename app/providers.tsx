@@ -86,7 +86,7 @@ export default function Providers({ children }: { children: React.ReactNode }) {
             en: {
               consentModal: {
                 title: 'This website wants to tell you something very important!',
-                description: 'This website uses cookies to only see how many people visit and how they interact with the site using Google Analytics. You can choose to accept or reject analytics cookies. For more details, read my [Privacy Policy](/privacy).',
+                description: 'This website uses cookies to only see how many people visit and how they interact with the site using Google Analytics. You can choose to accept or reject analytics cookies. For more details, read my <a href="/privacy" class="cc-link">Privacy Policy</a>.',
                 acceptAllBtn: 'Accept all',
                 acceptNecessaryBtn: 'Reject all',
               }
