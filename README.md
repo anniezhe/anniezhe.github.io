@@ -13,7 +13,7 @@ My website is built using a provided template from Next.js 14 (pages directory) 
 ## Technologies Used
 
 - [Next.js 14](https://nextjs.org/docs/getting-started)
-- [NextUI](https://nextui.org)
+- [NextUI (outdated)](https://nextui.org)
 - [Tailwind CSS](https://tailwindcss.com)
 - [Tailwind Variants](https://tailwind-variants.org)
 - [TypeScript](https://www.typescriptlang.org)
