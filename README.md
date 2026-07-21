@@ -52,7 +52,7 @@ allowBuilds:
 You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `pnpm`:
 
 ```bash
-pnpm install
+pnpm add
 ```
 
 ### Run the development server
