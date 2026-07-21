@@ -1,6 +1,6 @@
 # Annie He's Portfolio Website
 
-My website is built using a provided template from Next.js 14 (app router directory) and NextUI (v2).
+My website is built using a provided template from Next.js 14 (app router directory) and NextUI (v2, outdated).
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/82bad03d-9310-46d5-9dfd-40ecfdb828cf/deploy-status)](https://app.netlify.com/projects/anniezhe/deploys)
 
@@ -13,7 +13,7 @@ My website is built using a provided template from Next.js 14 (app router direct
 ## Technologies Used
 
 - [Next.js 14](https://nextjs.org/docs/getting-started)
-- [NextUI (outdated)](https://nextui.org)
+- [NextUI v2 (outdated)](https://nextui.org)
 - [Tailwind CSS](https://tailwindcss.com)
 - [Tailwind Variants](https://tailwind-variants.org)
 - [TypeScript](https://www.typescriptlang.org)
