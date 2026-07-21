@@ -99,21 +99,10 @@ export default function PrivacyPolicyPage() {
               accordance with their own privacy guidelines.
             </p>
           </section>
-
           {/* Section 6 */}
           <section>
             <h2 className="text-xl md:text-2xl font-semibold mb-3 text-card-foreground">
-              6. Changes to This Policy
-            </h2>
-            <p className="leading-relaxed">
-              I may update this Privacy Policy from time to time. Any changes will
-              be posted on this page with an updated modification date.
-            </p>
-          </section>
-          {/* Section 7 */}
-          <section>
-            <h2 className="text-xl md:text-2xl font-semibold mb-3 text-card-foreground">
-              7. Scheduling Services (Calendly)
+              6. Scheduling Services (Calendly)
             </h2>
             <p className="leading-relaxed mb-3">
               I use <strong>Calendly</strong> to provide online booking and appointment
@@ -134,6 +123,16 @@ export default function PrivacyPolicyPage() {
               >
                 Calendly Privacy Policy
               </a>.
+            </p>
+          </section>
+          {/* Section 7 */}
+          <section>
+            <h2 className="text-xl md:text-2xl font-semibold mb-3 text-card-foreground">
+              7. Changes to This Policy
+            </h2>
+            <p className="leading-relaxed">
+              I may update this Privacy Policy from time to time. Any changes will
+              be posted on this page with an updated modification date.
             </p>
           </section>
           {/* Section 8 */}
