@@ -3,73 +3,101 @@
 import * as React from "react";
 import { ThemeProvider } from "next-themes";
 import { NextUIProvider } from "@nextui-org/react";
-import { usePathname } from 'next/navigation'; // Updated hook for the App Router
+import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import * as CookieConsent from "vanilla-cookieconsent";
 import "vanilla-cookieconsent/dist/cookieconsent.css";
-import { pageview, initConsent, updateConsent } from '@/lib/gtag';
+import { pageview, initConsent, updateConsent, GA_TRACKING_ID } from '@/lib/gtag';
 
 export default function Providers({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const [mounted, setMounted] = useState(false);
-  // Initialize cookie consent once on mount
-  // 1. Set Google Analytics default state immediately on the client side
+
+  // Helper function to insert Google Analytics scripts dynamically
+  const loadGoogleAnalyticsScripts = () => {
+    if (typeof window === 'undefined' || document.getElementById('gtag-base-script')) return;
+    
+    const win = window as any;
+    
+    // 1. Safely initialize the dataLayer array
+    win.dataLayer = win.dataLayer || [];
+
+    // Use regular standard function declarations to preserve native 'arguments' objects
+    const gtagProxy = function (...args: any[]) {
+      // FIX: Pushing 'arguments' fixes the data structure type mapping discrepancy
+      win.dataLayer.push(arguments); 
+    };
+
+    // Bind to the window context so global library functions can see it
+    win.gtag = gtagProxy;
+
+    gtagProxy('js', new Date());
+    gtagProxy('config', GA_TRACKING_ID, { send_page_view: false });
+
+    // 2. Fetch and append the external library file
+    const script = document.createElement('script');
+    script.id = 'gtag-base-script';
+    // FIX: Corrected missing routing directory paths structure string template formatting
+    script.src = `https://googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`;
+    script.async = true;
+    document.head.appendChild(script);
+  };
+
+  // 1. Initial Consent Check on Mount
   useEffect(() => {
-    initConsent();
+    try {
+      const cookieData = CookieConsent.getCookie();
+      const acceptedCategories = cookieData?.categories || [];
+
+      if (acceptedCategories.includes('analytics')) {
+        // User already accepted previously; load GA immediately
+        initConsent(true);
+        loadGoogleAnalyticsScripts();
+      } else {
+        // User has not accepted; initialize standard safe denials
+        initConsent(false);
+      }
+    } catch (e) {
+      initConsent(false);
+    }
   }, []);
 
-  // 2. Initialize Cookie Consent Modal
+  // 2. Initialize Cookie Consent Modal Config
   useEffect(() => {
     if (!document.documentElement.classList.contains('cc--is-ready')) {
       CookieConsent.run({
-        // Hide the preferences toggle button from the layout
         guiOptions: {
           consentModal: {
             layout: 'box',
-            position: 'bottom right',
+            position: 'top center',
             equalWeightButtons: true
           }
         },
-        // Fire when the user makes their selection for the first time
         onFirstConsent: ({ cookie }) => {
           const hasAnalytics = cookie.categories.includes('analytics');
           updateConsent(hasAnalytics);
 
-          if (typeof window !== 'undefined' && (window as any).gtag) {
-            (window as any).gtag('consent', 'update', {
-              'analytics_storage': hasAnalytics ? 'granted' : 'denied'
-            });
+          if (hasAnalytics) {
+            loadGoogleAnalyticsScripts();
+            // Tiny timeout allows scripts to parse before firing the landing page view
+            setTimeout(() => {
+              pageview(pathname || "/");
+            }, 100);
           }
         },
-
-        // Fire whenever the user modifies their selections later
         onChange: ({ cookie }) => {
           const hasAnalytics = cookie.categories.includes('analytics');
           updateConsent(hasAnalytics);
 
-          if (typeof window !== 'undefined') {
-            // 1. Send the updated token to Google's data layer
-            if ((window as any).gtag) {
-              (window as any).gtag('consent', 'update', {
-                'analytics_storage': hasAnalytics ? 'granted' : 'denied'
-              });
-            }
-
-            // 2. FORCE COCKPIT RE-LOAD ON RE-ACCEPTANCE
-            // If they turned cookies BACK on, a hard reload fires the NextJS third-party 
-            // engine fresh, prompting Google to generate the _ga strings immediately!
-            if (hasAnalytics) {
-              window.location.reload();
-            }
+          if (hasAnalytics) {
+            window.location.reload(); // Reload handles immediate initialization safely
           }
         },
-
-
-
         categories: {
           necessary: { readOnly: true },
           analytics: {
             readOnly: false,
+            enabled: false, // Default checkbox value to off
             autoClear: {
               cookies: [
                 { name: /^(_ga)/, domain: window.location.hostname },
@@ -95,11 +123,18 @@ export default function Providers({ children }: { children: React.ReactNode }) {
         }
       });
     }
-  }, []);
-  // Trigger page tracking whenever the App Router changes paths
+  }, [pathname]);
+
+  // 3. Track subpage route transitions
   useEffect(() => {
-    if (pathname) {
-      pageview(pathname);
+    if (pathname && typeof window !== 'undefined') {
+      const cookieData = CookieConsent.getCookie();
+      const acceptedCategories = cookieData?.categories || [];
+
+      // Pageviews will ONLY fire if scripts exist and category is approved
+      if (acceptedCategories.includes('analytics') && (window as any).gtag) {
+        pageview(pathname);
+      }
     }
   }, [pathname]);
 

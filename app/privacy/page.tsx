@@ -105,23 +105,23 @@ export default function PrivacyPolicyPage() {
               6. Scheduling Services (Calendly)
             </h2>
             <p className="leading-relaxed mb-3">
-              I use <strong>Calendly</strong> to provide online booking and appointment
+              I use <strong>Cal.com</strong> to provide online booking and appointment
               scheduling directly on my website. When you use the embedded scheduling tool,
-              Calendly collects the specific information you enter, such as your name,
+              Cal.com collects the specific information you enter, such as your name,
               email address, and booking details, to confirm your appointment.
             </p>
             <p className="leading-relaxed">
-              Please note that Calendly operates independently and deploys its own cookies and
+              Please note that Cal.com operates independently and deploys its own cookies and
               cookie management configurations inside the booking window. I do not control
-              these cookies or Calendly's banner. For complete transparency, you can read more
+              these cookies or Cal.com's banner. For complete transparency, you can read more
               about their practices in the{" "}
               <a
-                href="https://calendly.com"
+                href="https://cal.com/privacy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary underline underline-offset-4 hover:opacity-80 transition-opacity"
               >
-                Calendly Privacy Policy
+                Cal.com Privacy Policy
               </a>.
             </p>
           </section>

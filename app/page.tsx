@@ -5,24 +5,39 @@ import { title, subtitle } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
 import {
   Tabs, Tab, Card, CardBody, CardHeader, Image,
-  Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, Divider, Link
+  Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, Divider, Link,
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  Button,
+  useDisclosure
 } from "@nextui-org/react";
 import SubstackFeed from '@/components/SubstackFeed';
+import { faGithub, faBluesky, faSquareLinkedin, faSubstack, faMedium, faMastodon } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import CalComEmbed from "../components/CalCom";
+import { NativeShareButton, EmailShareButton } from "../components/share";
+import { useState } from "react";
 
 export default function IndexPage() {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const [isStopped, setIsStopped] = useState<boolean>(false);
   return (
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         <div className="inline-block max-w-xl text-center justify-center">
-          <h1 className={title()}>Hello there! I'm </h1>
-          <h1 className={title({ color: "yellow" })}>Annie He</h1>
+          <h1 className={title()}> <span>Hello there! I'm </span></h1>
+          <h1 className={title({ color: "yellow" })}> <span>Annie He</span></h1>
           <h1 className={title()}>
             .
           </h1>
           &nbsp;
           <br />
           <h4 className={subtitle({ class: "mt-4" })}>
-            I'm an MPH student that studies how spatial, civic, and communication systems together can help improve population health outcomes in the United States.
+            <span>I'm an MPH student that studies how spatial, civic, and communication systems together can help improve population health outcomes in the United States.</span>
           </h4>
         </div>
 
@@ -30,14 +45,85 @@ export default function IndexPage() {
           <Card style={{ border: '1.5px solid #F09600' }}>
             <CardBody>
               <span>
-                Are you working in AI or public health -- or both? 
-                <br/>
-                <br/>
-                If so, I'd love to connect with you! Let's go to the "Let's Connect" portal at the top of this page. The portal has my contact information and allows you to schedule a 15-min meeting with me.
-                <br/>
-                <br/>
+                <span style={{ fontWeight: "bold" }}>Are you working in AI or public health -- or both? If so, I'd love to connect with you!</span>
+                <br />
+                <br />
                 I'm interested in speaking with people who are involved in health communication, law, non-medical determinants of health, civic tech, or AI for public good.
               </span>
+              <div className="flex flex-col items-center justify-center p-6">
+                {/* 1. Interactive Button */}
+                <div className={`pulsate-wrapper after:hover:animate-none ${isStopped ? "after:animate-none" : ""}`}>
+                  <Button
+                    onPress={() => {
+                      onOpen();
+                      setIsStopped(true); // Stops the pulsation animation on click
+                    }}
+                    className="relative z-10 text-sm font-bold text-orange-400 bg-default-100"
+                    variant="flat"
+                  >
+                    Let's Connect
+                  </Button>
+                </div>
+
+                {/* 2. Embedded Dynamic Modal View */}
+                <Modal isOpen={isOpen} scrollBehavior="inside" onOpenChange={onOpenChange}>
+                  <ModalContent>
+                    {(onClose) => (
+                      <>
+                        <ModalHeader className="flex">Here's my contact info</ModalHeader>
+                        <ModalBody>
+                          <div className="text-sm leading-6">
+                            <p>
+                              If you have any questions or concerns, my email address is anniezhe0@gmail.com.
+                              I am based in New York City, so my timezone, Eastern Time, may be different from yours and that's okay!
+                              Please send me an email at a time that works for you. I will do my best to get back to you within 24 to 48 hours.
+                            </p>
+                            <Link isExternal href={siteConfig.links.contact}>
+                              <FontAwesomeIcon icon={faEnvelope} size="2x" />
+                            </Link>
+                            <div className="mt-4">
+                              <p className="font-medium mb-1">Follow me on social media!</p>
+                              <Link isExternal href={siteConfig.links.linkedin}>
+                                <FontAwesomeIcon icon={faSquareLinkedin} size="2x" />
+                              </Link>
+                              <Link isExternal href={siteConfig.links.github}>
+                                <FontAwesomeIcon icon={faGithub} size="2x" />
+                              </Link>
+                              <Link isExternal href={siteConfig.links.bluesky}>
+                                <FontAwesomeIcon icon={faBluesky} size="2x" />
+                              </Link>
+                              <Link isExternal href={siteConfig.links.substack}>
+                                <FontAwesomeIcon icon={faSubstack} size="2x" />
+                              </Link>
+                              <Link isExternal href={siteConfig.links.medium}>
+                                <FontAwesomeIcon icon={faMedium} size="2x" />
+                              </Link>
+                              <Link isExternal href={siteConfig.links.mastodon}>
+                                <FontAwesomeIcon icon={faMastodon} size="2x" />
+                              </Link>
+                            </div>
+                            <div className="mt-4">
+                              <p className="font-medium mb-1">You can also share this page!</p>
+                              <NativeShareButton />
+                              {" "}
+                              <EmailShareButton />
+                            </div>
+
+                            <div className="mt-6">
+                              <CalComEmbed />
+                            </div>
+                          </div>
+                        </ModalBody>
+                        <ModalFooter>
+                          <Button color="danger" variant="light" onPress={onClose}>
+                            Close
+                          </Button>
+                        </ModalFooter>
+                      </>
+                    )}
+                  </ModalContent>
+                </Modal>
+              </div>
             </CardBody>
           </Card>
         </div>

@@ -34,7 +34,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-, "components/Calendly.tsx"  ],
+, "components/CalCom.tsx"  ],
   "exclude": [
     "node_modules"
   ]
