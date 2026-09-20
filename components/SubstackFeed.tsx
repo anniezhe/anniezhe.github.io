@@ -10,7 +10,6 @@ interface SubstackPost {
   snippet: string;
 }
 
-// REMOVED 'async' from this function declaration line!
 export default function SubstackFeed() {
   const [posts, setPosts] = useState<SubstackPost[]>([]);
   const [loading, setLoading] = useState(true);
@@ -29,7 +28,17 @@ export default function SubstackFeed() {
         setLoading(false);
       }
     }
+
+    // 1. Initial fetch when component mounts
     fetchPosts();
+
+    // 2. Set up the interval to poll the API every 10 minutes
+    const intervalId = setInterval(() => {
+      fetchPosts();
+    }, 600000); // 10 minutes in milliseconds
+
+    // 3. Clean up interval if user leaves or component unmounts
+    return () => clearInterval(intervalId);
   }, []);
 
   if (loading) {

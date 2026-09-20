@@ -37,7 +37,7 @@ export default function IndexPage() {
           &nbsp;
           <br />
           <h4 className={subtitle({ class: "mt-4" })}>
-            <span>I'm an MPH student that studies how spatial, civic, and communication systems together can help improve population health outcomes in the United States.</span>
+            <span>I'm an MPH student that studies how spatial (GIS), civic (jurisdictions and voting), and communication systems work together to help improve population health outcomes in the United States.</span>
           </h4>
         </div>
 
