@@ -37,7 +37,7 @@ export default function IndexPage() {
           &nbsp;
           <br />
           <h4 className={subtitle({ class: "mt-4" })}>
-            <span>I'm an MPH student that studies how spatial (GIS), civic (jurisdictions and voting), and communication systems work together to help improve population health outcomes in the United States.</span>
+            <span>I'm an MPH student that studies how spatial (GIS), civic (law and voting), and communication systems work together to help improve population health outcomes in the United States.</span>
           </h4>
         </div>
 
@@ -142,7 +142,7 @@ export default function IndexPage() {
                     Immersing myself in these issues made me realize I wanted a career in public health policy, which prompted me to apply for an MPH program by mid-2025.
                     <br />
                     <br />
-                    Beginning in 2026, I started my program in Texas, where I am studying U.S. health policy and researching how spatial, civic, and communication systems together impact community health.
+                    Beginning in 2026, I started my program in Texas, where I am studying U.S. health policy and researching how spatial, civic, and communication systems together can improve population health outcomes in the United States.
                     <br />
                     <br />
                     During my free time, I build personal projects and publish all of them on my {" "}
