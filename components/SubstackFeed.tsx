@@ -17,7 +17,8 @@ export default function SubstackFeed() {
   useEffect(() => {
     async function fetchPosts() {
       try {
-        const res = await fetch('/api/substack');
+        // FIX: Append a unique query string to bypass browser cache
+        const res = await fetch(`/api/substack?t=${Date.now()}`);
         if (res.ok) {
           const data = await res.json();
           setPosts(data);
@@ -28,6 +29,7 @@ export default function SubstackFeed() {
         setLoading(false);
       }
     }
+
 
     // 1. Initial fetch when component mounts
     fetchPosts();
@@ -56,10 +58,10 @@ export default function SubstackFeed() {
       <h3 className="text-xl font-bold mb-6 text-black dark:text-white border-b pb-2 border-gray-200 dark:border-zinc-800">
         Latest Newsletters
       </h3>
-      
+
       <div className="flex flex-col gap-4">
         {posts.map((post, index) => (
-          <a 
+          <a
             key={index}
             href={post.link}
             target="_blank"
