@@ -2,15 +2,15 @@
 import { NextResponse } from 'next/server';
 import Parser from 'rss-parser';
 
-// Force segment revalidation every 10 minutes at the server level
-export const revalidate = 600; 
+// Force segment revalidation every 60 seconds at the server level
+export const revalidate = 60; 
 
 export async function GET() {
   const parser = new Parser();
   try {
     // 1. Fetch raw XML text using native fetch so Next.js can track it
     const res = await fetch('https://anniezhe.substack.com/feed', {
-      next: { revalidate: 600 } // Backs up segment config
+      next: { revalidate: 60 } // Backs up segment config
     });
     
     if (!res.ok) throw new Error('Substack server responded with an error');
@@ -42,7 +42,7 @@ export async function GET() {
     return NextResponse.json(posts, {
       headers: {
         // Tells browsers and CDNs how long they should hold the response
-        'Cache-Control': 'public, s-maxage=600, stale-while-revalidate=600',
+        'Cache-Control': 'public, s-maxage=60, stale-while-revalidate=60',
       },
     });
   } catch (error) {

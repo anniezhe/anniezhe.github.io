@@ -34,10 +34,10 @@ export default function SubstackFeed() {
     // 1. Initial fetch when component mounts
     fetchPosts();
 
-    // 2. Set up the interval to poll the API every 10 minutes
+    // 2. Set up the interval to poll the API every minute
     const intervalId = setInterval(() => {
       fetchPosts();
-    }, 600000); // 10 minutes in milliseconds
+    }, 60000); // 1 minute in milliseconds
 
     // 3. Clean up interval if user leaves or component unmounts
     return () => clearInterval(intervalId);
